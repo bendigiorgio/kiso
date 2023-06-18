@@ -21,8 +21,10 @@
   "keywords": [
     "react",
     "typescript",
-    "hooks",
-    "scroll"
+    "components",
+    "next",
+    "ui",
+    "tailwind"
   ],
   "author": "Ben Di Giorgio",
   "license": "MIT",
