@@ -3,13 +3,7 @@
     "^.+\\.(t|j)sx?$": "ts-jest"
   },
   "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-  "moduleFileExtensions": [
-    "ts",
-    "tsx",
-    "js",
-    "jsx",
-    "json",
-    "node"
-  ],
-  "testEnvironment": "jsdom"
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "testEnvironment": "jsdom",
+  "testPathIgnorePatterns": ["/node_modules/", ".d.ts", "/dist/"]
 }
