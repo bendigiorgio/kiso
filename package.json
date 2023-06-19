@@ -32,7 +32,8 @@
     "dist",
     "LICENSE",
     "README.md",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "component_explanations"
   ],
   "peerDependencies": {
     "@radix-ui/react-aspect-ratio": "^1.0.3",
