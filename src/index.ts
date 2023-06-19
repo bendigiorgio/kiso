@@ -32,6 +32,7 @@ import {
 import { Loader } from "./components/loader";
 
 import { cn } from "./lib/utils";
+import { useHookForm } from "./lib/useForm";
 
 // Components
 export {
@@ -67,6 +68,6 @@ export {
 };
 
 // Utils
-export { cn };
+export { cn, useHookForm };
 
 // Types
