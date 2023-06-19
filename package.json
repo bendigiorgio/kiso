@@ -1,6 +1,6 @@
 {
   "name": "maison-components",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A collection of useful UI components and utilities for React and Next.js. Styled in Tailwindcss",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -63,6 +63,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
     "@radix-ui/react-toast": "^1.1.4",
+    "@radix-ui/react-toggle-group": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.6",
     "lucide-react": "^0.244.0",
     "next-themes": "^0.2.1",
