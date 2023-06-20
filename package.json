@@ -1,6 +1,6 @@
 {
   "name": "maison-components",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A collection of useful UI components and utilities for React and Next.js. Styled in Tailwindcss",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -32,7 +32,6 @@
     "dist",
     "LICENSE",
     "README.md",
-    "tailwind.config.js",
     "component_explanations"
   ],
   "bin": {
