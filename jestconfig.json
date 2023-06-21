@@ -5,5 +5,14 @@
   "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
   "testEnvironment": "jsdom",
-  "testPathIgnorePatterns": ["/node_modules/", ".d.ts", "/dist/"]
+  "testPathIgnorePatterns": ["/node_modules/", ".d.ts", "/dist/"],
+  "globals": {
+    "ts-jest": {
+      "useESM": true
+    }
+  },
+  "moduleNameMapper": {
+    "(.+)\\.js": "$1"
+  },
+  "extensionsToTreatAsEsm": [".ts"]
 }
