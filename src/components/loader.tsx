@@ -1,9 +1,9 @@
 "use client";
 import { cn } from "../lib/utils";
 import React from "react";
-import { Circle } from "./loader-variants/circle";
-import { Dots } from "./loader-variants/dots";
-import { Bars } from "./loader-variants/bars";
+import { Circle } from "./loader-variants/circle.js";
+import { Dots } from "./loader-variants/dots.js";
+import { Bars } from "./loader-variants/bars.js";
 
 export interface LoaderProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: "circle" | "dots" | "bars";
