@@ -4,7 +4,13 @@ import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
 import { getPackageManager } from "./cli/package-manager";
 import { getProjectInfo } from "./cli/get-project-info";
-import { HOOK, STYLES, TAILWIND_CONFIG, UTILS } from "./cli/templates";
+import {
+  HOOK,
+  STYLES,
+  STYLES_W_PROSE,
+  TAILWIND_CONFIG,
+  UTILS,
+} from "./cli/templates";
 import { execa } from "execa";
 import { logger } from "./cli/logger";
 import prompts from "prompts";
@@ -71,6 +77,14 @@ program
     tailwindSpinner.succeed("TailwindCSS Styles have been added");
 
     const globalStlyesSpinner = ora("Rewriting Global Styles").start();
+
+    const stylesConfirm = await prompts({
+      type: "confirm",
+      name: "confirm",
+      message: "Do you want to include the typography utility classes?",
+      initial: false,
+    });
+
     let stylesDestination = projectInfo?.srcDir
       ? "./src/styles/globals.css"
       : "./styles/globals.css";
@@ -80,7 +94,11 @@ program
         ? "./src/app/globals.css"
         : "./app/globals.css";
     }
-    fs.writeFileSync(stylesDestination, STYLES, "utf8");
+    if (stylesConfirm.confirm) {
+      fs.writeFileSync(stylesDestination, STYLES_W_PROSE, "utf8");
+    } else {
+      fs.writeFileSync(stylesDestination, STYLES, "utf8");
+    }
     globalStlyesSpinner.succeed("Global Styles have been rewritten");
 
     const utilsSpinner = ora("Adding Utils").start();
