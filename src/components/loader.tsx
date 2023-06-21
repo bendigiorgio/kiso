@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "../lib/utils";
+import { cn } from "../lib/utils.js";
 import React from "react";
 import { Circle } from "./loader-variants/circle.js";
 import { Dots } from "./loader-variants/dots.js";
