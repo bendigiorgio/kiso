@@ -231,12 +231,18 @@ export function cn(...inputs: ClassValue[]) {
 `;
 
 export const TAILWIND_CONFIG = `/** @type {import('tailwindcss').Config} */
+const path = require("path");
 module.exports = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
+    './src/pages/**/*.{ts,tsx}',
+    './src/components/**/*.{ts,tsx}',
+    './src/app/**/*.{ts,tsx}',
+    path.join(path.dirname(require.resolve("maison-components")), "**/*.js")
+
 	],
   theme: {
     container: {

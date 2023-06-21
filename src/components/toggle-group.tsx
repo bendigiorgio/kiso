@@ -2,6 +2,7 @@
 import { cn } from "../lib/utils.js";
 import * as ToggleGroupPrimitive from "@radix-ui/react-toggle-group";
 import { cva, type VariantProps } from "class-variance-authority";
+
 import * as React from "react";
 
 const toggleVariants = cva(
@@ -54,6 +55,7 @@ const toggleContainerVariants = cva(
 type ToggleGroupContextValue = {
   variant?: VariantProps<typeof toggleVariants>["variant"];
   size?: VariantProps<typeof toggleVariants>["size"];
+  type?: "single" | "multiple";
 };
 const ToggleGroupContext = React.createContext<ToggleGroupContextValue>({});
 
@@ -61,9 +63,11 @@ const ToggleGroup = React.forwardRef<
   React.ElementRef<typeof ToggleGroupPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> &
     VariantProps<typeof toggleVariants>
->(({ className, variant, size, ...props }, ref) => (
+>(({ className, variant, size, type = "single", ...props }, ref) => (
   <ToggleGroupContext.Provider value={{ variant, size }}>
+    {/* @ts-expect-error */}
     <ToggleGroupPrimitive.Root
+      type={type}
       ref={ref}
       className={cn(toggleContainerVariants({ variant, size, className }))}
       {...props}
