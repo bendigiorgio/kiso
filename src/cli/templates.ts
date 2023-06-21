@@ -299,7 +299,7 @@ module.exports = {
         "collapse-down": {
           from: { height: 0 },
           to: { height: "var(--radix-collapse-content-height)" },
-        }
+        },
       "collapse-up": {
         from: { height: "var(--radix-collapse-content-height)" },
         to: { height: 0 },
