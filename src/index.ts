@@ -1,5 +1,5 @@
-import { AspectRatio } from "./components/aspect-ratio";
-import { Button } from "./components/button";
+import { AspectRatio } from "./components/aspect-ratio.js";
+import { Button } from "./components/button.js";
 import {
   Card,
   CardContent,
@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./components/card";
+} from "./components/card.js";
 import {
   Form,
   FormControl,
@@ -17,22 +17,22 @@ import {
   FormLabel,
   FormMessage,
   useFormField,
-} from "./components/form";
-import { Input } from "./components/input";
-import { Label } from "./components/label";
-import { ScrollArea } from "./components/scroll-area";
-import { Separator } from "./components/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/tabs";
+} from "./components/form.js";
+import { Input } from "./components/input.js";
+import { Label } from "./components/label.js";
+import { ScrollArea } from "./components/scroll-area.js";
+import { Separator } from "./components/separator.js";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/tabs.js";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./components/tooltip";
-import { Loader } from "./components/loader";
+} from "./components/tooltip.js";
+import { Loader } from "./components/loader.js";
 
-import { cn } from "./lib/utils";
-import { useHookForm } from "./lib/useForm";
+import { cn } from "./lib/utils.js";
+import { useHookForm } from "./lib/useForm.js";
 
 // Components
 export {
