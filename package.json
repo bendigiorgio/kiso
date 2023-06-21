@@ -35,7 +35,7 @@
     "component_explanations"
   ],
   "bin": {
-    "maison-components": "./dist/cjs/cli.js"
+    "maison-components": "./dist/esm/cli.js"
   },
   "peerDependencies": {
     "@radix-ui/react-aspect-ratio": "^1.0.3",
@@ -61,6 +61,7 @@
     "@hookform/resolvers": "^3.1.1",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
+    "@radix-ui/react-avatar": "^1.0.3",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-scroll-area": "^1.0.4",
     "@radix-ui/react-separator": "^1.0.3",
