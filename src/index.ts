@@ -30,6 +30,14 @@ import {
   TooltipTrigger,
 } from "./components/tooltip.js";
 import { Loader } from "./components/loader.js";
+import { ToggleGroup, ToggleGroupItem } from "./components/toggle-group.js";
+import { Avatar, AvatarFallback, AvatarImage } from "./components/avatar.js";
+import { ThemeToggle } from "./components/ThemeToggle.js";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./components/collapsible.js";
 
 import { cn } from "./lib/utils.js";
 import { useHookForm } from "./lib/useForm.js";
@@ -65,6 +73,15 @@ export {
   TooltipProvider,
   TooltipTrigger,
   Loader,
+  ToggleGroup,
+  ToggleGroupItem,
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  ThemeToggle,
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
 };
 
 // Utils
