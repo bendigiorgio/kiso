@@ -4,12 +4,12 @@ import * as React from "react";
 import * as ContextMenuPrimitive from "@radix-ui/react-context-menu";
 import { cn } from "../../lib/utils.js";
 
-const ContextMenu = React.forwardRef<
-  React.ElementRef<typeof ContextMenuPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.Root>
->(({ children, ...props }) => (
+type ContextMenuProps = React.ComponentPropsWithoutRef<
+  typeof ContextMenuPrimitive.Root
+>;
+const ContextMenu: React.FC<ContextMenuProps> = ({ children, ...props }) => (
   <ContextMenuPrimitive.Root {...props}>{children}</ContextMenuPrimitive.Root>
-));
+);
 ContextMenu.displayName = ContextMenuPrimitive.Root.displayName;
 
 const ContextMenuTrigger = ContextMenuPrimitive.Trigger;
