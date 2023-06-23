@@ -1,5 +1,5 @@
 import { AspectRatio } from "./components/aspect-ratio/aspect-ratio.js";
-import { Button } from "./components/button/button.js";
+import { Button, buttonVariants } from "./components/button/button.js";
 import {
   Card,
   CardContent,
@@ -145,9 +145,22 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-  navigationMenuTriggerStyle,
 } from "./components/navigation-menu/navigation-menu.js";
-
+import { Badge } from "./components/badge/badge.js";
+import {
+  Calendar,
+  type CalendarProps,
+} from "./components/calendar/calendar.js";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "./components/table/table.js";
 import { cn } from "./lib/utils.js";
 import { useHookForm } from "./lib/useForm.js";
 
@@ -155,6 +168,7 @@ import { useHookForm } from "./lib/useForm.js";
 export {
   AspectRatio,
   Button,
+  buttonVariants,
   Card,
   CardContent,
   CardDescription,
@@ -267,10 +281,20 @@ export {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-  navigationMenuTriggerStyle,
+  Badge,
+  Calendar,
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
 };
 
 // Utils
 export { cn, useHookForm };
 
 // Types
+export type { CalendarProps };
