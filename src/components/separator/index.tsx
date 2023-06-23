@@ -1,2 +1,1 @@
-import { Separator } from "./separator.js";
-export { Separator };
+export { Separator } from "./separator";

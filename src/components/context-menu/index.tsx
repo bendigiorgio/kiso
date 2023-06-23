@@ -1,22 +1,3 @@
-import {
-  ContextMenu,
-  ContextMenuCheckboxItem,
-  ContextMenuContent,
-  ContextMenuGroup,
-  ContextMenuItem,
-  ContextMenuItemIndicator,
-  ContextMenuLabel,
-  ContextMenuPortal,
-  ContextMenuPrimitive,
-  ContextMenuRadioGroup,
-  ContextMenuRadioItem,
-  ContextMenuSeparator,
-  ContextMenuSub,
-  ContextMenuSubContent,
-  ContextMenuSubTrigger,
-  ContextMenuTrigger,
-} from "./context-menu.js";
-
 export {
   ContextMenu,
   ContextMenuCheckboxItem,
@@ -34,4 +15,4 @@ export {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-};
+} from "./context-menu";

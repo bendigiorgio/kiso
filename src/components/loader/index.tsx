@@ -1,2 +1,1 @@
-import { Loader } from "./loader.js";
-export { Loader };
+export { Loader } from "./loader";

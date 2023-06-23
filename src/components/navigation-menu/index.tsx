@@ -1,14 +1,3 @@
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "./navigation-menu.js";
-
 export {
   NavigationMenu,
   NavigationMenuContent,
@@ -18,4 +7,4 @@ export {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-};
+} from "./navigation-menu";

@@ -1,2 +1,1 @@
-import { AspectRatio } from "./aspect-ratio.js";
-export { AspectRatio };
+export { AspectRatio } from "./aspect-ratio";

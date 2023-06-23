@@ -1,2 +1,1 @@
-import { Label } from "./label.js";
-export { Label };
+export { Label } from "./label";

@@ -1,2 +1,1 @@
-import { Switch } from "./switch.js";
-export { Switch };
+export { Switch } from "./switch";

@@ -1,2 +1,1 @@
-import { ThemeToggle } from "./theme-toggle.js";
-export { ThemeToggle };
+export { ThemeToggle } from "./theme-toggle";

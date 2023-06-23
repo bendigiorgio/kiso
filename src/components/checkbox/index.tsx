@@ -1,2 +1,1 @@
-import { Checkbox } from "./checkbox.js";
-export { Checkbox };
+export { Checkbox } from "./checkbox";

@@ -11,12 +11,18 @@
     "url": "git+https://github.com/bendigiorgio/maison-components.git"
   },
   "scripts": {
-    "build": "yarn build:esm",
-    "build:esm": "tsc && tsc-alias",
+    "build": " yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc --project tsconfig.esm.json && tsc-alias -p tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json && tsc-alias -p tsconfig.cjs.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "test": "jest"
+  },
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "default": "./dist/esm/index.js"
   },
   "keywords": [
     "react",

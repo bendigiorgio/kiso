@@ -1,3 +1,2 @@
-import { Calendar, type CalendarProps } from "./calendar.js";
-export { Calendar };
-export type { CalendarProps };
+export { Calendar } from "./calendar";
+export type { CalendarProps } from "./calendar";

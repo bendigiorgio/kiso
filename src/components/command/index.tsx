@@ -1,14 +1,3 @@
-import {
-  Command,
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-  CommandShortcut,
-} from "./command.js";
 export {
   Command,
   CommandDialog,
@@ -19,4 +8,4 @@ export {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-};
+} from "./command";
