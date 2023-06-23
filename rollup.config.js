@@ -5,8 +5,8 @@ import esbuild from "rollup-plugin-esbuild";
 import json from "@rollup/plugin-json";
 import nodeExternals from "rollup-plugin-node-externals";
 import replace from "@rollup/plugin-replace";
-import packageJson from "./package.json" assert { type: "json" };
 import { nodeResolve } from "@rollup/plugin-node-resolve";
+import dts from "rollup-plugin-dts";
 
 export default [
   {
@@ -25,6 +25,11 @@ export default [
         preserveModules: true,
         dir: "dist/esm",
       },
+      {
+        dir: "dist",
+        format: "es",
+        sourcemap: true,
+      },
     ],
     plugins: [
       alias({
@@ -36,15 +41,16 @@ export default [
       alias({
         entries: [{ find: "@", replacement: "./src" }],
       }),
-      commonjs(),
-      nodeExternals(),
-      nodeResolve({ extensions: [".ts", ".tsx", ".js", ".jsx"] }),
       esbuild({
         sourceMap: true,
         tsconfig: "./tsconfig.json",
+        exclude: /node_modules/,
       }),
+      commonjs(),
+      nodeExternals(),
+      nodeResolve({ extensions: [".ts", ".tsx", ".js", ".jsx"] }),
       json(),
-
+      dts(),
       replace({ preventAssignment: true }),
     ],
     external: [],

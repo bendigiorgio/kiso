@@ -1,6 +1,6 @@
 {
   "name": "maison-components",
-  "version": "1.1.1",
+  "version": "1.1.1b",
   "description": "A collection of useful UI components and utilities for React and Next.js. Styled in Tailwindcss",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -9,6 +9,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bendigiorgio/maison-components.git"
+  },
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
   },
   "scripts": {
     "build": "rollup -c",
