@@ -1,10 +1,10 @@
 {
   "name": "maison-components",
-  "version": "1.1.1c",
+  "version": "1.1.1e",
   "description": "A collection of useful UI components and utilities for React and Next.js. Styled in Tailwindcss",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "require": "./dist/cjs/index.js"
   },
   "scripts": {
-    "build": "rollup -c && tsc",
+    "build": "rollup -c && rollup -c rollup.types.config.js",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
@@ -53,6 +53,7 @@
     "@radix-ui/react-aspect-ratio": "^1.0.3",
     "@radix-ui/react-avatar": "^1.0.3",
     "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-context-menu": "^2.1.4",
     "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-hover-card": "^1.0.6",

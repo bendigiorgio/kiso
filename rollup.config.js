@@ -6,7 +6,7 @@ import json from "@rollup/plugin-json";
 import nodeExternals from "rollup-plugin-node-externals";
 import replace from "@rollup/plugin-replace";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
-import dts from "rollup-plugin-dts";
+
 export default [
   {
     input: "src/index.ts",
