@@ -24,10 +24,15 @@ export default [
         preserveModules: true,
         dir: "dist/esm",
       },
+      {
+        dir: "dist/types",
+        format: "es",
+        sourcemap: true,
+      },
     ],
     plugins: [
       commonjs(),
-      nodeExternals({ devDeps: true }),
+      nodeExternals(),
       nodeResolve({ extensions: [".ts", ".tsx", ".js", ".jsx"] }),
       esbuild({
         sourceMap: true,
@@ -45,6 +50,7 @@ export default [
         entries: [{ find: "@", replacement: "./src" }],
       }),
       replace({ preventAssignment: true }),
+      dts(),
     ],
     external: [],
   },
