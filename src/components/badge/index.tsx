@@ -1,2 +1,2 @@
-import { Badge } from "./badge";
+import { Badge } from "./badge.js";
 export { Badge };

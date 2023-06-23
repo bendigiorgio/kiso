@@ -1,2 +1,2 @@
-import { Label } from "./label";
+import { Label } from "./label.js";
 export { Label };

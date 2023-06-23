@@ -1,2 +1,2 @@
-import { ScrollArea } from "./scroll-area";
+import { ScrollArea } from "./scroll-area.js";
 export { ScrollArea };

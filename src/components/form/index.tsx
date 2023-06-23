@@ -7,7 +7,7 @@ import {
   FormLabel,
   FormMessage,
   useFormField,
-} from "./form";
+} from "./form.js";
 
 export {
   Form,

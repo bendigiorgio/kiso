@@ -15,7 +15,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "./context-menu";
+} from "./context-menu.js";
 
 export {
   ContextMenu,

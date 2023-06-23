@@ -2,5 +2,5 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "./collapsible";
+} from "./collapsible.js";
 export { Collapsible, CollapsibleContent, CollapsibleTrigger };

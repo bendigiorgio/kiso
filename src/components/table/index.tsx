@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "./table";
+} from "./table.js";
 export {
   Table,
   TableBody,

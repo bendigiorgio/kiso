@@ -8,7 +8,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "./command";
+} from "./command.js";
 export {
   Command,
   CommandDialog,

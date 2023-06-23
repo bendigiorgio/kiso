@@ -15,7 +15,7 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
   MenubarTrigger,
-} from "./menu-bar";
+} from "./menu-bar.js";
 
 export {
   Menubar,

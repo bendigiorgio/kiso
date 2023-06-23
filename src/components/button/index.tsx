@@ -1,2 +1,2 @@
-import { Button, buttonVariants } from "./button";
+import { Button, buttonVariants } from "./button.js";
 export { Button, buttonVariants };

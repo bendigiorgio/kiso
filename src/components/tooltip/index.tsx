@@ -3,5 +3,5 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./tooltip";
+} from "./tooltip.js";
 export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger };

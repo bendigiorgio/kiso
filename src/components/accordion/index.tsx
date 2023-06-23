@@ -3,6 +3,6 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "./accordion";
+} from "./accordion.js";
 
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };

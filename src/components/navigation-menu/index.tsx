@@ -7,7 +7,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-} from "./navigation-menu";
+} from "./navigation-menu.js";
 
 export {
   NavigationMenu,

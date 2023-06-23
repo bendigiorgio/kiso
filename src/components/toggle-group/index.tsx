@@ -1,2 +1,2 @@
-import { ToggleGroup, ToggleGroupItem } from "./toggle-group";
+import { ToggleGroup, ToggleGroupItem } from "./toggle-group.js";
 export { ToggleGroup, ToggleGroupItem };
