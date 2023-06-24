@@ -7,6 +7,11 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "storybook-addon-themes",
+    "@storybook/addon-storysource",
+    "@storybook/addon-a11y",
+    "storybook-dark-mode",
+
     {
       name: "@storybook/addon-styling",
       options: {
@@ -19,7 +24,7 @@ const config: StorybookConfig = {
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: true,
   },
   webpackFinal: async (config) => {
     // @ts-expect-error
