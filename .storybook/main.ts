@@ -28,7 +28,7 @@ const config: StorybookConfig = {
     };
     // @ts-expect-error
     config.resolve.extensionAlias = {
-      ".js": [".ts", ".js"],
+      ".js": [".ts", ".tsx", ".js"],
       ".mjs": [".mts", ".mjs"],
     };
 
