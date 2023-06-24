@@ -1,36 +1,89 @@
 "use client";
+import { Button } from "@/components/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/dropdown-menu/dropdown-menu.js";
 import { cn } from "@/lib";
+import { AlignJustify } from "lucide-react";
 import * as React from "react";
+
+type LinkProps = {
+  href: string;
+  children: React.ReactNode;
+};
 
 type NavbarProps = React.HTMLAttributes<HTMLElement> & {
   pages: {
     title: string;
     href: string;
   }[];
-  logo?: {
+  logoImage?: {
     src: string;
     alt: string;
     href?: string;
   };
-  linkComponent?: React.ComponentType<any>;
+  LinkComponent?: React.ComponentType<LinkProps>;
+  LogoComponent?: React.ReactNode;
   children?: React.ReactNode;
 };
 
 const Navbar: React.FC<NavbarProps> = ({
   pages,
-  logo,
+  logoImage,
   children,
   className,
-  linkComponent = "a",
+  LinkComponent = "a",
+  LogoComponent,
   ...props
 }) => {
   return (
     <nav
-      className={cn("w-screen px-2 sm:px-6 lg:px-8 bg-black", className)}
+      className={cn("w-screen sm:px-6 lg:px-8 max-w-full", className)}
       {...props}
     >
-      <div></div>
-      <div></div>
+      {/* MOBILE */}
+      <div className="mx-auto flex sm:hidden items-center justify-between">
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <AlignJustify />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            {pages.map(({ title, href }) => (
+              <DropdownMenuItem key={href}>
+                <LinkComponent href={href}>{title}</LinkComponent>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+        {LogoComponent ||
+          (logoImage && (
+            <div className="mx-auto">
+              {LogoComponent
+                ? LogoComponent
+                : // eslint-disable-next-line @next/next/no-img-element
+                  logoImage && <img src={logoImage.src} alt={logoImage.alt} />}
+            </div>
+          ))}
+
+        {children}
+      </div>
+      <div className="sm:flex items-center hidden space-x-4 justify-between">
+        <div className="space-x-4">
+          {LogoComponent
+            ? LogoComponent
+            : // eslint-disable-next-line @next/next/no-img-element
+              logoImage && <img src={logoImage.src} alt={logoImage.alt} />}
+          {pages.map(({ title, href }) => (
+            <LinkComponent key={title} href={href}>
+              <Button variant="ghost">{title}</Button>
+            </LinkComponent>
+          ))}
+        </div>
+        {children}
+      </div>
     </nav>
   );
 };
