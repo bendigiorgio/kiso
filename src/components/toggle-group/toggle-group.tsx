@@ -13,9 +13,9 @@ const toggleVariants = cva(
         default:
           "data-[state=on]:bg-accent data-[state=on]:text-accent-foreground hover:bg-muted hover:text-muted-foreground",
         filled:
-          "data-[state=on]:bg-accent data-[state=on]:text-accent-foreground hover:bg-muted hover:text-muted-foreground",
+          "data-[state=on]:bg-toggle data-[state=on]:text-accent-foreground hover:bg-accent hover:text-muted-foreground",
         inverse:
-          "bg-accent data-[state=on]:bg-muted data-[state=on]:text-muted-foreground hover:bg-muted hover:text-accent-foreground",
+          "bg-accent data-[state=on]:bg-secondary data-[state=on]:text-muted-foreground hover:bg-accent hover:text-accent-foreground",
       },
       size: {
         default: "h-10 px-3",
@@ -36,8 +36,8 @@ const toggleContainerVariants = cva(
     variants: {
       variant: {
         default: "",
-        filled: "bg-muted",
-        inverse: "bg-accent",
+        filled: "bg-secondary",
+        inverse: "bg-toggle",
       },
       size: {
         default: "h-10 px-3",
