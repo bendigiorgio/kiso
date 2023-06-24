@@ -1,12 +1,12 @@
 "use client";
-import { Button } from "@/components/button/button.js";
+import { Button } from "@/components/button/index.js";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/dropdown-menu/dropdown-menu.js";
-import { cn } from "@/lib";
+} from "@/components/dropdown-menu/index.js";
+import { cn } from "@/lib/utils.js";
 import { AlignJustify } from "lucide-react";
 import * as React from "react";
 

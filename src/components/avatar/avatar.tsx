@@ -47,4 +47,18 @@ const AvatarFallback = React.forwardRef<
 ));
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
-export { Avatar, AvatarImage, AvatarFallback };
+const StackedAvatarGroup: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  className,
+  children,
+}) => (
+  <div
+    className={cn(
+      "flex -space-x-1 h-fit [&>*]:ring-background [&>*]:ring-2 [&>*]:shrink-0",
+      className
+    )}
+  >
+    {children}
+  </div>
+);
+
+export { Avatar, AvatarImage, AvatarFallback, StackedAvatarGroup };
