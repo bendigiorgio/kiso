@@ -84,7 +84,7 @@ export const STYLES = `@tailwind base;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
 
-    --toggle: 216 34% 17%;
+    --toggle: 217.2 32.6% 28.5%;
 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
@@ -198,7 +198,7 @@ export const STYLES_W_PROSE = `@tailwind base;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
 
-    --toggle: 216 34% 17%;
+    --toggle: 217.2 32.6% 28.5%;
 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;

@@ -11,7 +11,7 @@ type ThemeToggleProps = {
   variant?: "default" | "switch";
 };
 
-const ThemeToggle = ({ variant }: ThemeToggleProps) => {
+const ThemeToggle = ({ variant = "default" }: ThemeToggleProps) => {
   const { setTheme, theme } = useTheme();
 
   return (
@@ -29,7 +29,7 @@ const ThemeToggle = ({ variant }: ThemeToggleProps) => {
       )}
       {variant === "switch" && (
         <ToggleGroup
-          className="max-w-[165px]"
+          className="max-w-[200px]"
           type="single"
           variant="filled"
           size="sm"
@@ -39,7 +39,7 @@ const ThemeToggle = ({ variant }: ThemeToggleProps) => {
             value="light"
             onClick={() => setTheme("light")}
           >
-            <Sun className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <Sun className="rotate-0 scale-100 transition-all dark:-rotate-90" />
             <span>Light</span>
           </ToggleGroupItem>
           <ToggleGroupItem
@@ -47,7 +47,7 @@ const ThemeToggle = ({ variant }: ThemeToggleProps) => {
             value="dark"
             onClick={() => setTheme("dark")}
           >
-            <Moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <Moon className=" rotate-90 scale-100 transition-all dark:rotate-0" />
             <span>Dark</span>
           </ToggleGroupItem>
         </ToggleGroup>
