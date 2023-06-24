@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/button";
+import { Button } from "@/components/button/button.js";
 import {
   DropdownMenu,
   DropdownMenuContent,

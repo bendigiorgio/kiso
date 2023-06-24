@@ -27,4 +27,7 @@ export * from "./components/navigation-menu";
 export * from "./components/badge";
 export * from "./components/calendar";
 export * from "./components/table";
+
+export * from "./prebuilt/navbar";
+
 export * from "./lib";
