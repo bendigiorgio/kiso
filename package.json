@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/bendigiorgio/maison-components.git"
   },
+  "homepage": "https://bendigiorgio.github.io/maison-components",
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/cjs/index.js"
@@ -21,7 +22,11 @@
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "predeploy": "npm run build-storybook",
+    "deploy-pages": "gh-pages -d storybook-static",
+    "deploy-storybook": "npm run build-storybook && npm run deploy-pages",
+    "build-storybook": "storybook build",
+    "deply-publish": "npm publish && npm run deploy-storybook"
   },
   "keywords": [
     "react",
@@ -129,6 +134,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.12",
+    "gh-pages": "^5.0.0",
     "jest": "^29.5.0",
     "jest-canvas-mock": "^2.5.1",
     "jest-environment-jsdom": "^29.5.0",
