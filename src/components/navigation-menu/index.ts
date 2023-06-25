@@ -7,4 +7,5 @@ export {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
+  ListItem,
 } from "./navigation-menu";
