@@ -26,7 +26,7 @@ export const Disabled: Story = {
 
 export const Password: Story = {
   args: {
-    className: "max-w-sm",
+    conatinerClassname: "max-w-sm",
     type: "password",
   },
 };
