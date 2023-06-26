@@ -21,36 +21,36 @@ type Story = StoryObj<typeof NavigationMenu>;
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Avatar",
-    href: "/?path=/docs/component-avatar--docs",
+    href: "/maison-components/?path=/docs/component-avatar--docs",
     description:
       "A graphical representation of a user or the user's character or persona.",
   },
   {
     title: "Hover Card",
-    href: "/?path=/docs/component-hovercard--docs",
+    href: "/maison-components/?path=/docs/component-hovercard--docs",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
     title: "Input",
-    href: "/?path=/docs/component-input--docs",
+    href: "/maison-components/?path=/docs/component-input--docs",
     description:
       "A field that allows users to input text, numbers, and other data.",
   },
   {
     title: "Scroll Area",
-    href: "/?path=/docs/component-scrollarea--docs",
+    href: "/maison-components/?path=/docs/component-scrollarea--docs",
     description: "Visually or semantically separates content.",
   },
   {
     title: "Tabs",
-    href: "/?path=/docs/component-tabs--docs",
+    href: "/maison-components/?path=/docs/component-tabs--docs",
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
   },
   {
     title: "Tooltip",
-    href: "/?path=/docs/component-tooltip--docs",
+    href: "/maison-components/?path=/docs/component-tooltip--docs",
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
