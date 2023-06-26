@@ -1,4 +1,5 @@
 "use client";
+import { Burger } from "@/components/burger/index.js";
 import { Button } from "@/components/button/index.js";
 import {
   DropdownMenu,
@@ -7,7 +8,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/dropdown-menu/index.js";
 import { cn } from "@/lib/utils.js";
-import { AlignJustify } from "lucide-react";
 import * as React from "react";
 
 type LinkProps = {
@@ -28,6 +28,7 @@ type NavbarProps = React.HTMLAttributes<HTMLElement> & {
   LinkComponent?: React.ComponentType<LinkProps>;
   LogoComponent?: React.ReactNode;
   children?: React.ReactNode;
+  hamburgerSide?: "left" | "right";
 };
 
 const Navbar: React.FC<NavbarProps> = ({
@@ -37,8 +38,10 @@ const Navbar: React.FC<NavbarProps> = ({
   className,
   LinkComponent = "a",
   LogoComponent,
+  hamburgerSide = "left",
   ...props
 }) => {
+  const [open, setOpen] = React.useState(false);
   return (
     <nav
       className={cn("w-screen sm:px-6 lg:px-8 max-w-full", className)}
@@ -46,18 +49,20 @@ const Navbar: React.FC<NavbarProps> = ({
     >
       {/* MOBILE */}
       <div className="mx-auto flex sm:hidden items-center justify-between">
-        <DropdownMenu>
-          <DropdownMenuTrigger>
-            <AlignJustify />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            {pages.map(({ title, href }) => (
-              <DropdownMenuItem key={href}>
-                <LinkComponent href={href}>{title}</LinkComponent>
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
+        {hamburgerSide === "left" && (
+          <DropdownMenu onOpenChange={setOpen}>
+            <DropdownMenuTrigger asChild>
+              <Burger open={open} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              {pages.map(({ title, href }) => (
+                <DropdownMenuItem key={`${title}-${href}`}>
+                  <LinkComponent href={href}>{title}</LinkComponent>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        )}
         {LogoComponent ||
           (logoImage && (
             <div className="mx-auto">
