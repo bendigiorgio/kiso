@@ -27,7 +27,15 @@ export * from "./components/navigation-menu";
 export * from "./components/badge";
 export * from "./components/calendar";
 export * from "./components/table";
+export * from "./components/progress";
+export * from "./components/combobox";
+export * from "./components/date-picker";
+export * from "./components/stat";
+export * from "./components/tailwind-indicator";
 
 export * from "./prebuilt/navbar";
+export * from "./prebuilt/feature-card";
+export * from "./prebuilt/price-section";
+export * from "./prebuilt/testimonal";
 
 export * from "./lib";
