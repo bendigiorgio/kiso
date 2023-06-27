@@ -21,8 +21,8 @@ export const Default: Story = {
 
 export const WithColor: Story = {
   args: {
-    className: "bg-muted",
-    color: "#04ddfa",
+    className: "",
+    color: "#238BE6",
     title: "Title",
     description: "Description",
     icon: <Bomb className="w-full h-full" />,

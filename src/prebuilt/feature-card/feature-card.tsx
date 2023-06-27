@@ -17,19 +17,21 @@ const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       : { backgroundColor: color };
     return (
       <Card ref={ref} {...props} className={cn("w-full max-w-xs", className)}>
-        <CardHeader className="pb-0">
+        <CardHeader className="pb-1 space-y-3">
           {icon && (
-            <div style={{ color: color }} className="h-10 w-10 ml-1 mb-0.5">
+            <div style={{ color: color }} className="h-10 w-10 ml-1 mb-2">
               {icon}
             </div>
           )}
           <h4 className="text-lg font-medium">{title}</h4>
           <div
             style={backgroundStyle}
-            className={`h-0.5 w-16 rounded-full bg-accent-foreground`}
+            className={`h-0.5 w-11 rounded-full bg-accent-foreground`}
           />
         </CardHeader>
-        <CardContent className="mt-2">{description}</CardContent>
+        <CardContent className="mt-2 text-sm text-muted-foreground">
+          {description}
+        </CardContent>
       </Card>
     );
   }
