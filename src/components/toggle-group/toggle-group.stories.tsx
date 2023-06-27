@@ -26,9 +26,7 @@ export const Default: Story = {
   },
   render: (args) => (
     <ToggleGroup {...args}>
-      <ToggleGroupItem className="data-[state=on]:bg-toggle" value="option_1">
-        Option 1
-      </ToggleGroupItem>
+      <ToggleGroupItem value="option_1">Option 1</ToggleGroupItem>
       <ToggleGroupItem value="option_2">Option 2</ToggleGroupItem>
     </ToggleGroup>
   ),

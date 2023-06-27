@@ -1,5 +1,5 @@
-import { Badge } from "@/components/badge";
-import { Button } from "@/components/button";
+import { Badge } from "@/components/badge/index.js";
+import { Button } from "@/components/button/index.js";
 import {
   Card,
   CardContent,
