@@ -32,4 +32,4 @@ This has a lot of requirements but feel free to just copy the code for each comp
 
 ## Components
 
-WIP
+Check out the [documentation](https://bendigiorgio.github.io/maison-components/) for a list of all the components and their props.
