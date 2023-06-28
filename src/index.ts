@@ -1,3 +1,4 @@
+// Components
 export * from "./components/aspect-ratio";
 export * from "./components/button";
 export * from "./components/card";
@@ -33,10 +34,13 @@ export * from "./components/date-picker";
 export * from "./components/stat";
 export * from "./components/tailwind-indicator";
 export * from "./components/theme-icon";
+export * from "./components/timeline";
 
+// Prebuilt components
 export * from "./prebuilt/navbar";
 export * from "./prebuilt/feature-card";
 export * from "./prebuilt/price-section";
 export * from "./prebuilt/testimonal";
 
+// Utilities / Hooks
 export * from "./lib";
