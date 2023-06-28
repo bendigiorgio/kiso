@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Hero } from "./simple-center";
 
 const meta: Meta<typeof Hero> = {
-  title: "Prebuilt/Hero/Simple Centered",
+  title: "Prebuilt/Pages/Hero/Simple Centered",
   component: Hero,
 };
 
