@@ -32,6 +32,7 @@ export * from "./components/combobox";
 export * from "./components/date-picker";
 export * from "./components/stat";
 export * from "./components/tailwind-indicator";
+export * from "./components/theme-icon";
 
 export * from "./prebuilt/navbar";
 export * from "./prebuilt/feature-card";
