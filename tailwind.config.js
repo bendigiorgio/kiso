@@ -16,6 +16,10 @@ export const theme = {
     },
   },
   extend: {
+    screens: {
+      xs: "540px",
+      "2xs": "400px",
+    },
     colors: {
       border: "hsl(var(--border))",
       input: "hsl(var(--input))",
