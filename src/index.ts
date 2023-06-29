@@ -2,7 +2,6 @@
 export * from "./components/aspect-ratio";
 export * from "./components/button";
 export * from "./components/card";
-export * from "./components/form";
 export * from "./components/input";
 export * from "./components/label";
 export * from "./components/scroll-area";
@@ -35,6 +34,9 @@ export * from "./components/stat";
 export * from "./components/tailwind-indicator";
 export * from "./components/theme-icon";
 export * from "./components/timeline";
+
+// Form
+export * from "./form/form";
 
 // Prebuilt components
 export * from "./prebuilt/navbar";
