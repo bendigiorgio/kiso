@@ -8,7 +8,7 @@ const Features = () => {
     <section className="">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate flex flex-col overflow-hidden bg-background px-6 pb-24 pt-12 shadow-2xl sm:px-12 lg:flex lg:gap-x-20">
-          <div className="absolute left-12 top-32 h-[15vw] w-[15vw] rounded-full bg-rose-300" />
+          <div className="absolute left-12 top-32 h-[12vw] w-[12vw] rounded-full bg-rose-300" />
           <nav className="z-20 flex flex-row items-center justify-between px-3 py-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-center text-xs">
               <Button className="my-0 h-fit px-1 py-0" variant="link">

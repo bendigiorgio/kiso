@@ -29,8 +29,9 @@ export default [
       commonjs(),
       nodeExternals({ devDeps: true }),
       nodeResolve({ extensions: [".ts", ".tsx", ".js", ".jsx"] }),
+
       esbuild({
-        sourceMap: true,
+        sourceMap: false,
         tsconfig: "./tsconfig.json",
         exclude: /node_modules/,
       }),
