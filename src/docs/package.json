@@ -1,15 +1,16 @@
 {
-  "name": "maison-components-docs",
-  "version": "1.0.0",
+  "name": "maison-components-storybook",
+  "version": "1.0.2",
   "description": "Maison-components docs",
   "type": "module",
   "author": "Ben Di Giorgio",
   "license": "MIT",
   "scripts": {
+    "build": "deploy-storybook",
     "storybook": "storybook dev -p 6006",
-    "predeploy": "npm run build-storybook",
+    "predeploy": "pnpm run build-storybook",
     "deploy-pages": "gh-pages -d storybook-static",
-    "deploy-storybook": "npm run build-storybook && npm run deploy-pages",
+    "deploy-storybook": "pnpm run build-storybook && pnpm run deploy-pages",
     "build-storybook": "storybook build"
   },
   "dependencies": {

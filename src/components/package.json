@@ -1,10 +1,10 @@
 {
   "name": "maison-components-core",
-  "version": "1.0.0",
-  "description": "Maison-components-core",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
+  "version": "2.0.1",
+  "description": "Maison components core components",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
@@ -12,13 +12,11 @@
   },
   "homepage": "https://bendigiorgio.github.io/maison-components",
   "exports": {
-    "import": "./dist/esm/index.js",
-    "require": "./dist/cjs/index.js"
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
   },
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js && rollup -c ../../rollup.types.config.js",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' tsup",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "test": "jest"
   },
@@ -45,7 +43,6 @@
     "tailwindcss": "3.3.2"
   },
   "dependencies": {
-    "maison-components-utils": "workspace:*",
     "@commander-js/extra-typings": "^11.0.0",
     "@hookform/resolvers": "^3.1.1",
     "@radix-ui/react-accordion": "^1.1.2",
@@ -79,6 +76,7 @@
     "commander": "^11.0.0",
     "date-fns": "^2.30.0",
     "lucide-react": "^0.248.0",
+    "maison-components-utils": "workspace:*",
     "next-themes": "^0.2.1",
     "react-day-picker": "^8.8.0",
     "react-hook-form": "^7.44.3",
@@ -90,13 +88,6 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@rollup/plugin-alias": "^5.0.0",
-    "@rollup/plugin-commonjs": "^25.0.2",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.1.0",
-    "@rollup/plugin-replace": "^5.0.2",
-    "@rollup/plugin-terser": "^0.4.3",
-    "@rollup/plugin-typescript": "^11.1.1",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.2",
     "@types/node": "20.3.1",
@@ -122,15 +113,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.25.1",
-    "rollup-plugin-dts": "^5.3.0",
-    "rollup-plugin-esbuild": "^5.0.0",
-    "rollup-plugin-node-externals": "^6.1.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-preserve-directives": "^0.2.0",
     "tailwindcss": "3.3.2",
     "tailwindcss-animate": "^1.0.6",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
+    "tsup": "^7.1.0",
     "typescript": "^5.1.3"
   },
   "eslintConfig": {

@@ -2,17 +2,17 @@
 
 import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
-import { getPackageManager } from "./cli/package-manager.js";
-import { getProjectInfo } from "./cli/get-project-info.js";
+import { getPackageManager } from "./src/package-manager";
+import { getProjectInfo } from "./src/get-project-info";
 import {
   HOOK,
   STYLES,
   STYLES_W_PROSE,
   TAILWIND_CONFIG,
   UTILS,
-} from "./cli/templates.js";
+} from "./src/templates";
 import { execa } from "execa";
-import { logger } from "./cli/logger.js";
+import { logger } from "./src/logger";
 import prompts from "prompts";
 import ora from "ora";
 

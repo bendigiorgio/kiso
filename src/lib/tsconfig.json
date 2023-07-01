@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
     "esModuleInterop": true,
     "lib": ["DOM", "ESNext"],
     "strict": true,
@@ -15,7 +14,6 @@
     "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "composite": true,
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"]

@@ -12,7 +12,7 @@ import {
   Tabs,
   TabsList,
   Loader,
-} from "../../..";
+} from "../";
 
 describe("Common render tests", () => {
   it("renders AspectRatio without crashing", () => {
