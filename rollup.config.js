@@ -6,7 +6,7 @@ import json from "@rollup/plugin-json";
 import nodeExternals from "rollup-plugin-node-externals";
 import replace from "@rollup/plugin-replace";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
-
+import preserveDirectives from "rollup-plugin-preserve-directives";
 export default [
   {
     input: "src/index.ts",
@@ -26,6 +26,7 @@ export default [
       },
     ],
     plugins: [
+      preserveDirectives(),
       commonjs(),
       nodeExternals({ devDeps: true }),
       nodeResolve({ extensions: [".ts", ".tsx", ".js", ".jsx"] }),
@@ -43,7 +44,11 @@ export default [
         ],
       }),
       alias({
-        entries: [{ find: "@", replacement: "./src" }],
+        entries: [
+          { find: "@components", replacement: "../../components/src" },
+          { find: "@lib", replacement: "../../lib/src" },
+          { find: "@", replacement: "./src" },
+        ],
       }),
       replace({ preventAssignment: true }),
     ],

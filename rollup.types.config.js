@@ -26,6 +26,7 @@ export default [
       },
       {
         dir: "dist/types",
+        preserveModules: true,
         format: "es",
         sourcemap: true,
       },
@@ -47,7 +48,11 @@ export default [
         ],
       }),
       alias({
-        entries: [{ find: "@", replacement: "./src" }],
+        entries: [
+          { find: "@components", replacement: "../../components/src" },
+          { find: "@lib", replacement: "../../lib/src" },
+          { find: "@", replacement: "./src" },
+        ],
       }),
       replace({ preventAssignment: true }),
       dts(),

@@ -1,0 +1,75 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Information/Installation" />
+
+# Installation
+
+First install the package with your favorite package manager.
+
+```sh
+npm install maison-components
+```
+
+```sh
+yarn add maison-components
+```
+
+```sh
+pnpm add maison-components
+```
+
+## Initialisation
+
+You can either use the CLI to setup the necessary styling, or do it manually.
+
+```sh
+npx maison-components init
+```
+
+### Manual
+
+Ensure you have tailwindcss installed and update your `tailwind.config` file to include the following from this file [tailwind.config](https://github.com/bendigiorgio/maison-components/blob/main/tailwind.config).
+
+Next update your globals.css file to include the following from this file [globals.css](https://github.com/bendigiorgio/maison-components/blob/main/src/globals.css)
+
+If you don't want to use the prose utility classes you can remove the following from the globals.css file.
+
+```css
+@layer components {
+  .heading-1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  }
+
+  .heading-2 {
+    @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+  }
+
+  .heading-3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+
+  .heading-4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+
+  .paragraph {
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+
+  .blockquote {
+    @apply mt-6 border-l-2 pl-6 italic;
+  }
+
+  .ilcode {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+  }
+}
+```
+
+## Usage
+
+Import the components you want to use from the package.
+
+```tsx
+import { Button } from "maison-components";
+```

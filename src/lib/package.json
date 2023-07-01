@@ -1,7 +1,7 @@
 {
-  "name": "maison-components-form",
+  "name": "maison-components-utils",
   "version": "1.0.0",
-  "description": "Maison-components form",
+  "description": "Maison-components utils",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
@@ -14,8 +14,6 @@
     "require": "./dist/cjs/index.js"
   },
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js && rollup -c ../../rollup.types.config.js",
-    "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "test": "jest"
@@ -30,6 +28,12 @@
   ],
   "author": "Ben Di Giorgio",
   "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "component_explanations"
+  ],
   "peerDependencies": {
     "next": "13.4.6",
     "next-themes": "^0.2.1",
@@ -37,10 +41,16 @@
     "tailwindcss": "3.3.2"
   },
   "dependencies": {
-    "maison-components-core": "workspace:*",
     "@hookform/resolvers": "^3.1.1",
+    "@types/fs-extra": "^11.0.1",
+    "@types/prompts": "^2.4.4",
+    "class-variance-authority": "^0.6.0",
+    "clsx": "^1.2.1",
     "react-hook-form": "^7.44.3",
     "recast": "^0.23.2",
+    "tailwind-merge": "^1.13.2",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss-animate": "^1.0.6",
     "tsc-alias": "^1.8.6",
     "zod": "^3.21.4"
   },
