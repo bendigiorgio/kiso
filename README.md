@@ -27,7 +27,7 @@ This has a lot of requirements but feel free to just copy the code for each comp
 2. Import the required components from the library and use them in your project.
 
    ```jsx
-   import { ToggleGroup, ToggleGroupItem } from "maison-components";
+   import { ToggleGroup, ToggleGroupItem } from "maison-components-core";
    ```
 
 ## Components
