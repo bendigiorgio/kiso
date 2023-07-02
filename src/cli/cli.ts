@@ -2,7 +2,6 @@
 
 import { Command } from "@commander-js/extra-typings";
 import fs from "fs";
-import { getPackageManager } from "./src/package-manager";
 import { getProjectInfo } from "./src/get-project-info";
 import {
   HOOK,
@@ -11,27 +10,10 @@ import {
   TAILWIND_CONFIG,
   UTILS,
 } from "./src/templates";
-import { execa } from "execa";
+
 import { logger } from "./src/logger";
 import prompts from "prompts";
 import ora from "ora";
-
-const PROJECT_DEPENDENCIES = [
-  "tailwindcss-animate",
-  "class-variance-authority",
-  "clsx",
-  "tailwind-merge",
-  "lucide-react",
-  "next-themes",
-  "@radix-ui/react-aspect-ratio",
-  "@radix-ui/react-label",
-  "@radix-ui/react-scroll-area",
-  "@radix-ui/react-separator",
-  "@radix-ui/react-slot",
-  "@radix-ui/react-tabs",
-  "@radix-ui/react-toast",
-  "@radix-ui/react-tooltip",
-];
 
 const program = new Command();
 
@@ -44,7 +26,6 @@ program
   .command("init")
   .description("Initialize Maison Components")
   .action(async () => {
-    const packageManager = getPackageManager();
     const projectInfo = await getProjectInfo();
     const tailwindConfigFileName = "tailwind.config.js";
     const oldTailwindConfigFileName = "tailwind.config.old.js";
@@ -117,12 +98,6 @@ program
     hookSpinner.succeed("useHookForm hook has been added");
 
     utilsSpinner.succeed("Utils have been added");
-
-    // Install dependencies.
-    await execa(packageManager, [
-      packageManager === "npm" ? "install" : "add",
-      ...PROJECT_DEPENDENCIES,
-    ]);
   });
 
 // program

@@ -9,7 +9,7 @@
   },
   "homepage": "https://bendigiorgio.github.io/maison-components",
   "scripts": {
-    "package-publish": "turbo run build lint && changeset version && changeset publish"
+    "release": "turbo run build lint && changeset version && changeset publish"
   },
   "keywords": [
     "react",
@@ -34,13 +34,6 @@
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "@rollup/plugin-alias": "^5.0.0",
-    "@rollup/plugin-commonjs": "^25.0.2",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.1.0",
-    "@rollup/plugin-replace": "^5.0.2",
-    "@rollup/plugin-terser": "^0.4.3",
-    "@rollup/plugin-typescript": "^11.1.1",
     "@storybook/addon-a11y": "^7.0.23",
     "@storybook/addon-docs": "^7.0.23",
     "@storybook/addon-essentials": "^7.0.23",
@@ -79,12 +72,6 @@
     "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rollup": "^3.25.1",
-    "rollup-plugin-dts": "^5.3.0",
-    "rollup-plugin-esbuild": "^5.0.0",
-    "rollup-plugin-node-externals": "^6.1.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-preserve-directives": "^0.2.0",
     "storybook-addon-themes": "^6.1.0",
     "storybook-dark-mode": "^3.0.0",
     "tailwindcss": "3.3.2",
