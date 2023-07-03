@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "../../../lib/src/utils";
+import { cn } from "@lib/utils";
 import React from "react";
 import { Circle } from "./loader-variants/circle";
 import { Dots } from "./loader-variants/dots";

@@ -5,7 +5,7 @@ import * as React from "react";
 import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { AspectRatio } from "../aspect-ratio/aspect-ratio";
 import { Label } from "../label/label";
-import { cn } from "../../../lib/src/utils";
+import { cn } from "@lib/utils";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {

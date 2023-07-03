@@ -458,6 +458,9 @@ importers:
 
   src/docs:
     dependencies:
+      lucide-react:
+        specifier: ^0.248.0
+        version: 0.248.0(react@18.2.0)
       maison-components-core:
         specifier: workspace:*
         version: link:../components
