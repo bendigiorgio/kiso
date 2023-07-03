@@ -21,7 +21,7 @@ jobs:
           node-version: 16.x
 
       - name: Install Dependencies
-        run: yarn
+        run: pnpm install
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
@@ -38,7 +38,7 @@ jobs:
       - name: Publish
         if: steps.changesets.outputs.hasChangesets == 'true'
         # You can do something when a publish should happen.
-        run: yarn release
+        run: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
