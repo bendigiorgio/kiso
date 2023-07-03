@@ -1,5 +1,11 @@
 # maison-components-core
 
+## 2.1.0
+
+### Minor Changes
+
+- c82be9d: Fixed export/imports
+
 ## 2.0.1
 
 ### Patch Changes
