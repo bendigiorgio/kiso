@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react";
-import { useScrollDirection } from "../../../lib/src/useScrollDirection"; // Path to your Hook
+import { useScrollDirection } from "./";
 
 describe("useScrollDirection hook", () => {
   beforeEach(() => {

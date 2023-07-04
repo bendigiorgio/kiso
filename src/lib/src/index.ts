@@ -1,3 +1,3 @@
 export { cn } from "./utils";
-export { useHookForm } from "./useForm";
-export { useScrollDirection } from "./useScrollDirection";
+export { useHookForm } from "./use-form";
+export { useScrollDirection } from "./use-scroll-direction";
