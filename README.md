@@ -2,7 +2,7 @@
 
 Maison Components is a modern, customizable, and highly flexible component library for Next.js applications. It is built using TypeScript, TailwindCSS, and Radix UI.
 
-This has a lot of requirements but feel free to just copy the code for each component individually if you don't want to install all the dependencies.
+For incremental adoption or to suit your project's needs, feel free to just copy the code for each component individually if you don't want to install all the dependencies.
 
 ## Features
 
