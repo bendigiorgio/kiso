@@ -9,7 +9,8 @@
   },
   "homepage": "https://bendigiorgio.github.io/maison-components",
   "scripts": {
-    "release": "turbo run build lint && changeset version && changeset publish"
+    "release": "turbo run build lint && changeset version && changeset publish",
+    "test": "jest"
   },
   "keywords": [
     "react",

@@ -1,25 +1,44 @@
-/** @type {import('ts-jest').JestConfigWithTsJest} */
+import type { JestConfigWithTsJest } from "ts-jest";
+import { pathsToModuleNameMapper } from "ts-jest";
+import { compilerOptions as componentCompileOptions } from "./src/components/tsconfig.json";
+import { compilerOptions as libCompileOptions } from "./src/lib/tsconfig.json";
 
-module.exports = {
+const jestConfig: JestConfigWithTsJest = {
   preset: "ts-jest",
-  transform: {
-    "^.+\\.jsx?$": "babel-jest",
-    "^.+\\.(t|j)sx?$": "ts-jest",
-  },
-  testRegex: "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   testEnvironment: "jsdom",
-  testPathIgnorePatterns: ["/node_modules/", ".d.ts", "/dist/"],
-  globals: {
-    "ts-jest": {
-      useESM: true,
-      tsConfig: "tsconfig.json",
+  rootDir: "./",
+  transform: { "^.+\\.(t|j)sx?$": "ts-jest" },
+  testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/dist/"],
+  moduleFileExtensions: ["ts", "tsx", "js"],
+  projects: [
+    {
+      displayName: "Components",
+      testEnvironment: "jsdom",
+      transform: { "^.+\\.(t|j)sx?$": "ts-jest" },
+      testMatch: [
+        "<rootDir>/src/components/src/**/tests/**/*.[jt]s?(x)",
+        "<rootDir>/src/components/src/**/**/?(*.)+(spec|test).[jt]s?(x)",
+      ],
+      modulePaths: [componentCompileOptions.baseUrl], // <-- This will be set to 'baseUrl' value
+      moduleNameMapper: pathsToModuleNameMapper(componentCompileOptions.paths, {
+        prefix: "<rootDir>/src/components/src/",
+      }),
+      testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/dist/"],
     },
-  },
-
-  moduleNameMapper: {
-    "^@/(.*)\\.js$": "<rootDir>/src/$1",
-    "^(\\.{1,2}/.*)\\.js$": "$1",
-  },
-  extensionsToTreatAsEsm: [".ts", ".tsx"],
+    {
+      displayName: "Lib",
+      testEnvironment: "jsdom",
+      transform: { "^.+\\.(t|j)sx?$": "ts-jest" },
+      testMatch: ["<rootDir>/lib/src/**/?(*.)+(spec|test).[jt]s?(x)"],
+      testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/dist/"],
+      modulePaths: [libCompileOptions.baseUrl], // <-- This will be set to 'baseUrl' value
+      moduleNameMapper: pathsToModuleNameMapper(
+        libCompileOptions.paths,
+        { prefix: "<rootDir>/src/lib/src/" } /*, { prefix: '<rootDir>/' } */
+      ),
+    },
+  ],
+  roots: ["<rootDir>"],
 };
+
+export default jestConfig;

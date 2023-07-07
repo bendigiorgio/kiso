@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2015",
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["DOM", "ESNext"],
     "strict": true,
@@ -17,7 +18,9 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@lib/*": ["./lib/src/*"],
+      "@components/*": ["./components/src/*"]
     }
   },
   "exclude": [

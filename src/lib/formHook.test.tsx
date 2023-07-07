@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react";
 import "jest-canvas-mock";
 import * as z from "zod";
-import { useHookForm } from "../lib/useForm";
+import { useHookForm } from "./src";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
