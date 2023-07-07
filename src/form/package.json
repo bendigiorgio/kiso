@@ -1,6 +1,6 @@
 {
   "name": "maison-components-form",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Maison-components form",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
