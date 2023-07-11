@@ -30,6 +30,15 @@ For incremental adoption or to suit your project's needs, feel free to just copy
    import { ToggleGroup, ToggleGroupItem } from "maison-components-core";
    ```
 
+Alternatively
+
+```jsx
+import {
+  ToggleGroup,
+  ToggleGroupItem,
+} from "maison-components-core/toggle-group";
+```
+
 ## Components
 
 Check out the [documentation](https://bendigiorgio.github.io/maison-components/) for a list of all the components and their props.
