@@ -23,12 +23,12 @@ export interface TailwindIndicatorProps
   extends VariantProps<typeof indicatorVariants>,
     React.HTMLAttributes<HTMLDivElement> {
   additionalSizes?: string[];
-  size: "xs" | "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg";
 }
 
 const TailwindIndicator = ({
   additionalSizes,
-  size,
+  size = "sm",
   className,
 }: TailwindIndicatorProps) => {
   if (process.env.NODE_ENV === "production") return null;
