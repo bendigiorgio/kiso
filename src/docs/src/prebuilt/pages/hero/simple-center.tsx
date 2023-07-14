@@ -30,6 +30,12 @@ const Hero = () => {
               Elevate your creations effortlessly with Maison Components. Power
               your projects with our versatile, top-tier components.
             </p>
+            <div className="pt-4">
+              <Button className="h-fit bg-violet-600 hover:bg-violet-500 shadow-sm text-white">
+                Get started
+              </Button>
+              <Button variant="link">Learn more &rarr;</Button>
+            </div>
           </div>
         </div>
       </div>

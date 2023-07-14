@@ -1,6 +1,6 @@
 import React from "react";
 
-const CenterImage = () => {
+const Space = () => {
   return (
     <section className="">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -10,4 +10,4 @@ const CenterImage = () => {
   );
 };
 
-export { CenterImage };
+export { Space };
