@@ -1,6 +1,6 @@
 {
   "name": "maison-components-cli",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Maison-components cli",
   "main": "dist/index.cjs",
   "module": "dist/index.js",

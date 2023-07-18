@@ -1,5 +1,16 @@
 # maison-components-form
 
+## 2.2.0
+
+### Minor Changes
+
+- 6c39f92: Fix import/exports with ts
+
+### Patch Changes
+
+- Updated dependencies [6c39f92]
+  - maison-components-core@3.0.0
+
 ## 2.1.2
 
 ### Patch Changes
