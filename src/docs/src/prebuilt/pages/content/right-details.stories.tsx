@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { RightDetails } from "./right-details";
-import React from "react";
 
 const meta: Meta<typeof RightDetails> = {
   title: "Prebuilt/Pages/Content/Right Details",

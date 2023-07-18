@@ -245,7 +245,7 @@ module.exports = {
     './src/pages/**/*.{ts,tsx}',
     './src/components/**/*.{ts,tsx}',
     './src/app/**/*.{ts,tsx}',
-    path.join(path.dirname(require.resolve("maison-components")), "**/*.js")
+    path.join(path.dirname(require.resolve("maison-components-core")), "**/*.js")
 
 	],
   theme: {

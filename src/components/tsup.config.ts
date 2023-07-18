@@ -1,9 +1,10 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/**/*.ts"],
+  entry: ["src/index.ts", "src/**/index.ts"],
+  outDir: "dist",
   format: ["cjs", "esm"],
-  splitting: false,
+  splitting: true,
   dts: true,
   minify: true,
   sourcemap: true,

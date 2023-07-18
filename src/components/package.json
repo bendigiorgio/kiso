@@ -14,11 +14,13 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     },
     "./*": {
       "import": "./dist/*/index.js",
-      "require": "./dist/*/index.cjs"
+      "require": "./dist/*/index.cjs",
+      "types": "./dist/*/index.d.ts"
     }
   },
   "scripts": {
@@ -43,10 +45,10 @@
     "component_explanations"
   ],
   "peerDependencies": {
-    "next": "^13.4.6",
+    "next": "latest",
     "next-themes": "^0.2.1",
     "react": ">= 17",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "latest"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",

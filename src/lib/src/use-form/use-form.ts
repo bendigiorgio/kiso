@@ -23,6 +23,5 @@ export const useHookForm = <T extends z.ZodObject<any, "strip", z.ZodTypeAny>>({
     defaultValues: defaultValues as DeepPartial<z.infer<T>>,
     ...otherProps,
   });
-
   return form;
 };
