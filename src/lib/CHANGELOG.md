@@ -1,5 +1,11 @@
 # maison-components-utils
 
+## 2.3.0
+
+### Minor Changes
+
+- 6c39f92: Fix import/exports with ts
+
 ## 2.2.0
 
 ### Minor Changes

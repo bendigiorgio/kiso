@@ -1,6 +1,6 @@
 {
   "name": "maison-components-core",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Maison components core components",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
