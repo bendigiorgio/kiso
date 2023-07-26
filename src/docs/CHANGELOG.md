@@ -1,5 +1,12 @@
 # maison-components-storybook
 
+## 1.2.1
+
+### Patch Changes
+
+- Updated dependencies
+  - maison-components-core@3.1.0
+
 ## 1.2.0
 
 ### Minor Changes

@@ -8,11 +8,7 @@ import { DateRange } from "react-day-picker";
 import { cn } from "@lib/utils";
 import { Button } from "../button";
 import { Calendar, CalendarProps } from "../calendar";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "../popover";
+import { Popover, PopoverContent, PopoverTrigger } from "../popover";
 
 import {
   Select,
@@ -25,7 +21,7 @@ import {
 type DatePickerProps = {
   calendarProps?: CalendarProps;
   popOverProps?: React.ComponentProps<typeof Popover>;
-  triggerComponent: React.Component<typeof Button> | React.ReactNode;
+  triggerComponent?: React.Component<typeof Button> | React.ReactNode;
   variant?: "default" | "range" | "presets";
 };
 
