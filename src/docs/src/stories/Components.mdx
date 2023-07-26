@@ -1,0 +1,30 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Component/Introduction" />
+
+# Components
+
+These are components which are easily used and re-styled to fit your needs. Many use Radix Primitives under the hood to provide a solid foundation.
+You can look at the extra API documentation for such components at [Radix UI](https://radix-ui.com/docs/primitives/overview/introduction).
+
+## Code Splitting/Tree Shaking
+
+The components are all able to be imported individually or all together. This means that you can import only the components you need and not the entire library.
+
+```tsx
+import { Button } from "maison-components-core/button";
+```
+
+or
+
+```tsx
+import { Button } from "maison-components-core";
+```
+
+## Theming
+
+Most components will take a className prop which can be used to override the default styles.
+
+## Alternative Usage
+
+I highly encourage you to copy the source code for the components as needed to your project. This will allow you to have full control over the components and their styles. Feel free to use them in anyway you see fit for your project.
