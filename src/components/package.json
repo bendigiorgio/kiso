@@ -1,6 +1,6 @@
 {
   "name": "maison-components-core",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Maison components core components",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -25,11 +25,125 @@
   },
   "typesVersions": {
     "*": {
-      "*": [
-        "dist/index.d.ts"
+      "accordion": [
+        "dist/accordion/"
       ],
-      "/*": [
-        "dist/*/index.d.ts"
+      "aspect-ratio": [
+        "dist/aspect-ratio/"
+      ],
+      "avatar": [
+        "dist/avatar/"
+      ],
+      "badge": [
+        "dist/badge/"
+      ],
+      "burger": [
+        "dist/burger/"
+      ],
+      "button": [
+        "dist/button/"
+      ],
+      "calendar": [
+        "dist/calendar/"
+      ],
+      "card": [
+        "dist/card/"
+      ],
+      "checkbox": [
+        "dist/checkbox/"
+      ],
+      "collapsible": [
+        "dist/collapsible/"
+      ],
+      "combobox": [
+        "dist/combobox/"
+      ],
+      "command": [
+        "dist/command/"
+      ],
+      "context-menu": [
+        "dist/context-menu/"
+      ],
+      "date-picker": [
+        "dist/date-picker/"
+      ],
+      "dialog": [
+        "dist/dialog/"
+      ],
+      "dropdown-menu": [
+        "dist/dropdown-menu/"
+      ],
+      "hover-card": [
+        "dist/hover-card/"
+      ],
+      "input": [
+        "dist/input/"
+      ],
+      "label": [
+        "dist/label/"
+      ],
+      "loader": [
+        "dist/loader/"
+      ],
+      "menu-bar": [
+        "dist/menu-bar/"
+      ],
+      "navigation-menu": [
+        "dist/navigation-menu/"
+      ],
+      "popover": [
+        "dist/popover/"
+      ],
+      "progress": [
+        "dist/progress/"
+      ],
+      "scroll-area": [
+        "dist/scroll-area/"
+      ],
+      "select": [
+        "dist/select/"
+      ],
+      "separator": [
+        "dist/separator/"
+      ],
+      "sheet": [
+        "dist/sheet/"
+      ],
+      "stat": [
+        "dist/stat/"
+      ],
+      "switch": [
+        "dist/switch/"
+      ],
+      "table": [
+        "dist/table/"
+      ],
+      "tabs": [
+        "dist/tabs/"
+      ],
+      "tailwind-indicator": [
+        "dist/tailwind-indicator/"
+      ],
+      "tests": [
+        "dist/tests/"
+      ],
+      "textarea": [
+        "dist/textarea/"
+      ],
+      "theme-icon": [
+        "dist/theme-icon/"
+      ],
+      "theme-toggle": [
+        "dist/theme-toggle/"
+      ],
+      "timeline": [
+        "dist/timeline/"
+      ],
+      "toggle-group": [
+        "dist/toggle-group/"
+      ],
+      "tooltip": [
+        "dist/tooltip/"
       ]
     }
   },

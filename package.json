@@ -9,7 +9,8 @@
   },
   "homepage": "https://bendigiorgio.github.io/maison-components",
   "scripts": {
-    "release": "turbo run build lint && changeset version && changeset publish",
+    "generateTypesVersions": "esno ./scripts/generateTypesVersions.ts",
+    "release": "pnpm run generateTypesVersions && turbo run build lint && changeset version && changeset publish",
     "test": "jest"
   },
   "keywords": [
@@ -88,6 +89,7 @@
     ]
   },
   "dependencies": {
-    "@changesets/cli": "^2.26.2"
+    "@changesets/cli": "^2.26.2",
+    "esno": "^0.17.0"
   }
 }
