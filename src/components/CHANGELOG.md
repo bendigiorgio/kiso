@@ -1,5 +1,11 @@
 # maison-components-core
 
+## 3.2.0
+
+### Minor Changes
+
+- Fix type imports
+
 ## 3.1.0
 
 ### Minor Changes

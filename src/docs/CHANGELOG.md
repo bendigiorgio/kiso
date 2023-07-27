@@ -1,5 +1,18 @@
 # maison-components-storybook
 
+## 1.3.0
+
+### Minor Changes
+
+- Fix type imports
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+  - maison-components-charts@1.1.0
+  - maison-components-core@3.2.0
+
 ## 1.2.1
 
 ### Patch Changes

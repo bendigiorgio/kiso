@@ -1,17 +1,17 @@
 import React from "react";
 import { Payload } from "recharts/types/component/DefaultLegendContent";
-
-export interface ChartLegendProps {
+import { cn } from "@lib/utils";
+export interface ChartLegendProps extends React.HTMLAttributes<HTMLDivElement> {
   payload: Payload[] | undefined;
 }
 
-export const ChartLegend = ({ payload }: ChartLegendProps) => {
+export const ChartLegend = ({ payload, className }: ChartLegendProps) => {
   const legendRef = React.useRef<HTMLDivElement>(null);
   return (
     <div
       ref={legendRef}
       style={{ justifyContent: "end" }}
-      className="flex items-center justify-end w-full "
+      className={cn("flex items-center justify-end w-full", className)}
     >
       {payload && (
         <ol className="flex flex-wrap overflow-hidden truncate">

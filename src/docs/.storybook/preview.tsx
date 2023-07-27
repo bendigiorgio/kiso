@@ -1,8 +1,7 @@
 import type { Preview } from "@storybook/react";
 import { themes } from "@storybook/theming";
 import "./globals.css";
-import "!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css";
-import "tailwindcss/tailwind.css";
+
 import { DocsContainer } from "./DocContainer";
 import React from "react";
 

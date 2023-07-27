@@ -1,6 +1,6 @@
 {
   "name": "maison-components-charts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Maison components chart components",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -25,8 +25,17 @@
   },
   "typesVersions": {
     "*": {
-      "*": [
-        "dist/index.d.ts"
+      "area-chart": [
+        "dist/area-chart/"
+      ],
+      "bar-chart": [
+        "dist/bar-chart/"
+      ],
+      "common": [
+        "dist/common/"
+      ],
+      "line-chart": [
+        "dist/line-chart/"
       ]
     }
   },

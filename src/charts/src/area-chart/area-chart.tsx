@@ -59,6 +59,7 @@ const AreaChart = React.forwardRef<
       connectNulls = false,
       allowDecimals = true,
       className,
+      children,
     },
     ref
   ) => {
@@ -104,7 +105,6 @@ const AreaChart = React.forwardRef<
               />
               {showTooltip && (
                 <Tooltip
-                  // ongoing issue: https://github.com/recharts/recharts/issues/2920
                   wrapperStyle={{ outline: "none" }}
                   isAnimationActive={false}
                   cursor={{ stroke: "#d1d5db", strokeWidth: 1 }}
@@ -180,6 +180,7 @@ const AreaChart = React.forwardRef<
                   connectNulls={connectNulls}
                 />
               ))}
+              {children}
             </RAreaChart>
           )}
         </ResponsiveContainer>

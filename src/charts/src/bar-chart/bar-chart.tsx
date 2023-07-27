@@ -58,6 +58,7 @@ const BarChart = React.forwardRef<
       stack = false,
       relative = false,
       barWidth,
+      children,
     },
     ref
   ) => {
@@ -146,7 +147,6 @@ const BarChart = React.forwardRef<
               )}
               {showTooltip && (
                 <Tooltip
-                  // ongoing issue: https://github.com/recharts/recharts/issues/2920
                   wrapperStyle={{ outline: "none" }}
                   isAnimationActive={false}
                   cursor={{ fill: "#d1d5db", opacity: "0.15" }}
@@ -179,6 +179,7 @@ const BarChart = React.forwardRef<
                   animationDuration={animationDuration}
                 />
               ))}
+              {children}
             </ReChartsBarChart>
           ) : (
             <></>
