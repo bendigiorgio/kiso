@@ -1,6 +1,6 @@
 {
   "name": "maison-components-charts",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "description": "Maison components chart components",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -34,8 +34,14 @@
       "common": [
         "dist/common/"
       ],
+      "donut-chart": [
+        "dist/donut-chart/"
+      ],
       "line-chart": [
         "dist/line-chart/"
+      ],
+      "radar-chart": [
+        "dist/radar-chart/"
       ]
     }
   },
