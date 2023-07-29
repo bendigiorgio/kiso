@@ -9,6 +9,7 @@
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "dist/types",
+    "resolveJsonModule": true,
     "noEmit": true,
     "outDir": "dist",
     "moduleResolution": "node",
