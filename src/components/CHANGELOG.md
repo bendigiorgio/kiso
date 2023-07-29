@@ -1,5 +1,12 @@
 # maison-components-core
 
+## 3.2.1
+
+### Patch Changes
+
+- Updated dependencies
+  - maison-components-utils@2.4.0
+
 ## 3.2.0
 
 ### Minor Changes
