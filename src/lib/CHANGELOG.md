@@ -1,5 +1,11 @@
 # maison-components-utils
 
+## 2.4.0
+
+### Minor Changes
+
+- Two useful hooks and donut/radar charts.
+
 ## 2.3.0
 
 ### Minor Changes
