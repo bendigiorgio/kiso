@@ -1,5 +1,12 @@
 # maison-components-charts
 
+## 1.3.2
+
+### Patch Changes
+
+- Updated dependencies [8332b0a]
+  - maison-components-core@3.4.0
+
 ## 1.3.1
 
 ### Patch Changes

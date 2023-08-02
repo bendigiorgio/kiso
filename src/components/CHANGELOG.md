@@ -1,5 +1,11 @@
 # maison-components-core
 
+## 3.4.0
+
+### Minor Changes
+
+- 8332b0a: peer deps fix
+
 ## 3.3.0
 
 ### Minor Changes
