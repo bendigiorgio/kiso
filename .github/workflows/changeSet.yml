@@ -26,7 +26,7 @@ jobs:
       - name: debug
         shell: bash
         run: |
-          echo pnpm store path
+          echo $(pnpm store path)
 
       - name: Get pnpm store directory
         shell: bash
