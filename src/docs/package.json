@@ -7,7 +7,7 @@
   "author": "Ben Di Giorgio",
   "license": "MIT",
   "scripts": {
-    "build": "pnpm run build-storybook && pnpm run deploy-pages",
+    "build": "pnpm run build-storybook",
     "storybook": "storybook dev -p 6006",
     "predeploy": "pnpm run build-storybook",
     "deploy-pages": "gh-pages -d storybook-static",
