@@ -30,7 +30,7 @@
   "license": "MIT",
   "peerDependencies": {
     "react": ">= 17",
-    "tailwindcss": "latest"
+    "tailwindcss": ">= 3.3.3"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
