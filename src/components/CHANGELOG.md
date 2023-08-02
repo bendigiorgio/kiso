@@ -1,5 +1,11 @@
 # maison-components-core
 
+## 3.3.0
+
+### Minor Changes
+
+- 4128855: Fix peer deps
+
 ## 3.2.1
 
 ### Patch Changes
