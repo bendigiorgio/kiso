@@ -23,6 +23,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
+      - name: debug
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)"
 
       - name: Get pnpm store directory
         shell: bash
