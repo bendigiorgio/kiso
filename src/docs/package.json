@@ -10,6 +10,7 @@
     "build": "pnpm run build-storybook",
     "storybook": "storybook dev -p 6006",
     "predeploy": "pnpm run build-storybook",
+    "local-deploy": "storybook build && pnpm run deploy-pages",
     "deploy-pages": "gh-pages -d storybook-static",
     "build-storybook": "storybook build"
   },
