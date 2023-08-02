@@ -1,5 +1,16 @@
 # maison-components-form
 
+## 2.3.0
+
+### Minor Changes
+
+- 8332b0a: peer deps fix
+
+### Patch Changes
+
+- Updated dependencies [8332b0a]
+  - maison-components-core@3.4.0
+
 ## 2.2.4
 
 ### Patch Changes
