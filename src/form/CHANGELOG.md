@@ -1,5 +1,12 @@
 # maison-components-form
 
+## 2.2.4
+
+### Patch Changes
+
+- Updated dependencies [4128855]
+  - maison-components-core@3.3.0
+
 ## 2.2.3
 
 ### Patch Changes
