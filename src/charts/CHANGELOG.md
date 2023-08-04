@@ -1,5 +1,11 @@
 # maison-components-charts
 
+## 1.4.0
+
+### Minor Changes
+
+- 82a16ee: Fix peer dependency
+
 ## 1.3.2
 
 ### Patch Changes
