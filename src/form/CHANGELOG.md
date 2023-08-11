@@ -1,5 +1,12 @@
 # maison-components-form
 
+## 2.3.1
+
+### Patch Changes
+
+- Updated dependencies [8bc02c3]
+  - maison-components-core@3.5.0
+
 ## 2.3.0
 
 ### Minor Changes
