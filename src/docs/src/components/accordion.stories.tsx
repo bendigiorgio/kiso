@@ -8,7 +8,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Accordion> = {
-  title: "Component/Accordion",
+  title: "Components/Accordion",
   component: Accordion,
 };
 type Story = StoryObj<typeof Accordion>;

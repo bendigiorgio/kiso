@@ -3,7 +3,7 @@ import { Input } from "@components/input/input";
 import React from "react";
 
 const meta: Meta<typeof Input> = {
-  title: "Component/Input",
+  title: "Components/Input",
   component: Input,
 };
 

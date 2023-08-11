@@ -8,7 +8,7 @@ import {
 } from "@components/stat/stat";
 import React from "react";
 const meta: Meta<typeof Stat> = {
-  title: "Component/Stat",
+  title: "Components/Stat",
   component: Stat,
 };
 

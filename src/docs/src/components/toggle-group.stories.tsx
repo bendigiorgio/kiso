@@ -6,7 +6,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof ToggleGroup> = {
-  title: "Component/ToggleGroup",
+  title: "Components/ToggleGroup",
   component: ToggleGroup,
   argTypes: {
     type: {

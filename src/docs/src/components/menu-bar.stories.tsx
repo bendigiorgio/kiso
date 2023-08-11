@@ -11,7 +11,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Menubar> = {
-  title: "Component/Menubar",
+  title: "Components/Menubar",
   component: Menubar,
 };
 

@@ -7,7 +7,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof HoverCard> = {
-  title: "Component/HoverCard",
+  title: "Components/HoverCard",
   component: HoverCard,
 };
 

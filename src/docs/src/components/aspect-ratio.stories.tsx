@@ -3,7 +3,7 @@ import { AspectRatio } from "@components/aspect-ratio/aspect-ratio";
 import React from "react";
 
 const meta: Meta<typeof AspectRatio> = {
-  title: "Component/AspectRatio",
+  title: "Components/AspectRatio",
   component: AspectRatio,
 };
 type Story = StoryObj<typeof AspectRatio>;

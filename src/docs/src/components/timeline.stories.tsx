@@ -30,7 +30,7 @@ import React from "react";
  * # Examples:
  */
 const meta: Meta<typeof Timeline> = {
-  title: "Component/Timeline",
+  title: "Components/Timeline",
   component: Timeline,
 };
 

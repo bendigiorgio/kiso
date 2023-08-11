@@ -8,7 +8,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Avatar> = {
-  title: "Component/Avatar",
+  title: "Components/Avatar",
   component: Avatar,
 };
 type Story = StoryObj<typeof Avatar>;

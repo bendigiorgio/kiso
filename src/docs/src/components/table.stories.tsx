@@ -11,7 +11,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Table> = {
-  title: "Component/Table",
+  title: "Components/Table",
   component: Table,
 };
 

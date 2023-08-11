@@ -10,7 +10,7 @@ import {
 } from "@components/card/card";
 
 const meta: Meta<typeof Card> = {
-  title: "Component/Card",
+  title: "Components/Card",
   component: Card,
 };
 

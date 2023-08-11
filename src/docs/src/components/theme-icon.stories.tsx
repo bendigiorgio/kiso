@@ -3,7 +3,7 @@ import { ThemeIcon } from "@components/theme-icon/theme-icon";
 import { CloudHail } from "lucide-react";
 import React from "react";
 const meta: Meta<typeof ThemeIcon> = {
-  title: "Component/ThemeIcon",
+  title: "Components/ThemeIcon",
   component: ThemeIcon,
 };
 

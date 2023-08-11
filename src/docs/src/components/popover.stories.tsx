@@ -7,7 +7,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Popover> = {
-  title: "Component/Popover",
+  title: "Components/Popover",
   component: Popover,
 };
 

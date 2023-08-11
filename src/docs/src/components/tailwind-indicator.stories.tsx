@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { TailwindIndicator } from "@components/tailwind-indicator/tailwind-indicator";
 
 const meta: Meta<typeof TailwindIndicator> = {
-  title: "Component/TailwindIndicator",
+  title: "Components/TailwindIndicator",
   component: TailwindIndicator,
 };
 

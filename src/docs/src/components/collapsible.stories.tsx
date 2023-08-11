@@ -7,7 +7,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Collapsible> = {
-  title: "Component/Collapsible",
+  title: "Components/Collapsible",
   component: Collapsible,
 };
 

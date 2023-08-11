@@ -3,7 +3,7 @@ import { Separator } from "@components/separator/separator";
 import React from "react";
 
 const meta: Meta<typeof Separator> = {
-  title: "Component/Separator",
+  title: "Components/Separator",
   component: Separator,
 };
 

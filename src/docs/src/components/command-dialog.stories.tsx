@@ -10,7 +10,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof CommandDialog> = {
-  title: "Component/Command/Dialog",
+  title: "Components/Command/Dialog",
   component: CommandDialog,
 };
 

@@ -4,7 +4,7 @@ import React from "react";
 import { DogIcon } from "lucide-react";
 
 const meta: Meta<typeof Button> = {
-  title: "Component/Button",
+  title: "Components/Button",
   component: Button,
 };
 

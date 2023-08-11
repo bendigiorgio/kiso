@@ -10,7 +10,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof NavigationMenu> = {
-  title: "Component/NavigationMenu",
+  title: "Components/NavigationMenu",
   component: NavigationMenu,
 };
 

@@ -8,7 +8,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof ContextMenu> = {
-  title: "Component/ContextMenu",
+  title: "Components/ContextMenu",
   component: ContextMenu,
   argTypes: {
     dir: {

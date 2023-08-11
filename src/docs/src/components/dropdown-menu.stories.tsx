@@ -10,7 +10,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof DropdownMenu> = {
-  title: "Component/DropdownMenu",
+  title: "Components/DropdownMenu",
   component: DropdownMenu,
 };
 

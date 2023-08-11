@@ -8,7 +8,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Tabs> = {
-  title: "Component/Tabs",
+  title: "Components/Tabs",
   component: Tabs,
 };
 

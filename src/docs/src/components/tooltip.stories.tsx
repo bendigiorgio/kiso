@@ -8,7 +8,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Tooltip> = {
-  title: "Component/Tooltip",
+  title: "Components/Tooltip",
   component: Tooltip,
 };
 

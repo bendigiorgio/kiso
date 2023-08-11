@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { ScrollArea } from "@components/scroll-area/scroll-area";
 
 const meta: Meta<typeof ScrollArea> = {
-  title: "Component/ScrollArea",
+  title: "Components/ScrollArea",
   component: ScrollArea,
 };
 

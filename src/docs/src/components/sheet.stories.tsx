@@ -10,7 +10,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Sheet> = {
-  title: "Component/Sheet",
+  title: "Components/Sheet",
   component: Sheet,
 };
 

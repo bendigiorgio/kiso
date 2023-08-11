@@ -9,7 +9,7 @@ import {
 import React from "react";
 
 const meta: Meta<typeof Select> = {
-  title: "Component/Select",
+  title: "Components/Select",
   component: Select,
 };
 

@@ -12,7 +12,7 @@ import { Button } from "@components/button/button";
 import React from "react";
 
 const meta: Meta<typeof Dialog> = {
-  title: "Component/Dialog",
+  title: "Components/Dialog",
   component: Dialog,
 };
 
