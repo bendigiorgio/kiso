@@ -2,6 +2,7 @@
   "name": "maison-components-core",
   "version": "3.5.0",
   "description": "Maison components core components",
+  "private": false,
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

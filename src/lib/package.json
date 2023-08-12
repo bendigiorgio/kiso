@@ -1,6 +1,7 @@
 {
   "name": "maison-components-utils",
   "version": "2.4.0",
+  "private": false,
   "description": "Maison-components utils",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
