@@ -1,6 +1,6 @@
 {
   "name": "maison-components-charts",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Maison components chart components",
   "main": "dist/index.cjs",
   "module": "dist/index.js",

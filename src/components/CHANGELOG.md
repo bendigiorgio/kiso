@@ -1,5 +1,11 @@
 # maison-components-core
 
+## 3.5.0
+
+### Minor Changes
+
+- 8bc02c3: New component - Spotlight
+
 ## 3.4.0
 
 ### Minor Changes
