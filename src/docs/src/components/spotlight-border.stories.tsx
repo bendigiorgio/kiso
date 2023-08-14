@@ -1,19 +1,18 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SpotlightProvider } from "@components/spotlight/spotlight";
 import React from "react";
 import { Input } from "@components/input/input";
 import { Card, CardHeader, CardTitle } from "@components/card";
 import { Button } from "@components/button";
 import { SpotlightBorder } from "@components/spotlight/border-spotlight";
 
-const meta: Meta<typeof SpotlightProvider> = {
+const meta: Meta<typeof SpotlightBorder> = {
   title: "Components/Spotlight/Border",
-  component: SpotlightProvider,
+  component: SpotlightBorder,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof SpotlightProvider>;
+type Story = StoryObj<typeof SpotlightBorder>;
 
 export const Default: Story = {
   args: {

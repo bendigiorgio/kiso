@@ -71,10 +71,8 @@ export const SpotlightBorder = React.forwardRef<
                   border: ` 1px solid ${spotlightColor}`,
                   opacity,
                   WebkitMaskImage: `radial-gradient(30% 30px at ${
-                    (position[index] || {}).x || 0
-                  }px ${
-                    (position[index] || {}).y || 0
-                  }px, black 45%, transparent)`,
+                    position[index]?.x || 0
+                  }px ${position[index]?.y || 0}px, black 45%, transparent)`,
                 }}
                 aria-hidden="true"
                 className="border-[rgb(228 115 32)] w-full h-full rounded-[inherit] pointer-events-none absolute left-0 top-0 z-10 cursor-default border bg-[transparent] p-3.5 opacity-0  transition-opacity duration-500 placeholder:select-none"
