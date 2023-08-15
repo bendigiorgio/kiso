@@ -39,3 +39,4 @@ export * from "./timeline";
 export * from "./toggle-group";
 export * from "./tooltip";
 export * from "./spotlight";
+export * from "./toast";

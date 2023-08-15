@@ -92,8 +92,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require("tailwindcss-text-fill-stroke"),
-  ],
+  plugins: [require("tailwindcss-animate")],
 };

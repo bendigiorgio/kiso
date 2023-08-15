@@ -146,6 +146,9 @@
       "timeline": [
         "dist/timeline/"
       ],
+      "toast": [
+        "dist/toast/"
+      ],
       "toggle-group": [
         "dist/toggle-group/"
       ],
@@ -172,8 +175,7 @@
   "files": [
     "dist",
     "LICENSE",
-    "README.md",
-    "component_explanations"
+    "README.md"
   ],
   "peerDependencies": {
     "next": ">= 13.4.12",
