@@ -18,7 +18,7 @@ const BottomGrid = ({ features }: BottomGridProps) => {
               Get your design on
             </h4>
             <h2 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight transition-colors sm:text-3xl max-w-md mt-1.5">
-              Elevate Your Design with Maison Components Today
+              Elevate Your Design with Kiso Today
             </h2>
             <p className="mt-3 leading-8 text-foreground/80">
               Ac euismod vel sit maecenas id pellentesque eu sed consectetur.

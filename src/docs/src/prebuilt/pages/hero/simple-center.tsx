@@ -27,7 +27,7 @@ const Hero = () => {
               Supercharge your web applications
             </div>
             <p className="pt-6 text-lg leading-7 text-foreground/80 [&:not(:first-child)]:mt-6">
-              Elevate your creations effortlessly with Maison Components. Power
+              Elevate your creations effortlessly with Kiso. Power
               your projects with our versatile, top-tier components.
             </p>
             <div className="pt-4">

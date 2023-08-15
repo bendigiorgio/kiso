@@ -6,13 +6,13 @@ const Features = [
   {
     title: "Free and Open Source",
     description:
-      "Maison Components is free and open source. It's licensed under the MIT license.",
+      "Kiso is free and open source. It's licensed under the MIT license.",
     icon: <Flame />,
   },
   {
     title: "Constant Updates",
     description:
-      "We're always updating Maison Components with new components and features.",
+      "We're always updating Kiso with new components and features.",
     icon: <Beaker />,
   },
   {
@@ -24,7 +24,7 @@ const Features = [
   {
     title: "Made for Developers",
     description:
-      "Maison Components is made for developers. Extend with all the functionality you require.",
+      "Kiso is made for developers. Extend with all the functionality you require.",
     icon: <Server />,
   },
 ];
@@ -37,7 +37,7 @@ const RightGrid = () => {
           <div className="flex flex-col gap-6 lg:flex-row">
             <div className=" flex  max-w-xs flex-col lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
               <h2 className="scroll-m-20 pb-2 text-2xl font-bold tracking-tight transition-colors sm:text-3xl ">
-                Elevate Your Design with Maison Components Today
+                Elevate Your Design with Kiso Today
               </h2>
               <p className="mt-6 leading-8 text-foreground/80">
                 Ac euismod vel sit maecenas id pellentesque eu sed consectetur.

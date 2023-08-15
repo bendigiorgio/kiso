@@ -1,11 +1,11 @@
-# maison-components-charts
+# kiso-charts
 
 ## 1.4.1
 
 ### Patch Changes
 
 - Updated dependencies [8bc02c3]
-  - maison-components-core@3.5.0
+  - kiso-core@3.5.0
 
 ## 1.4.0
 
@@ -18,14 +18,14 @@
 ### Patch Changes
 
 - Updated dependencies [8332b0a]
-  - maison-components-core@3.4.0
+  - kiso-core@3.4.0
 
 ## 1.3.1
 
 ### Patch Changes
 
 - Updated dependencies [4128855]
-  - maison-components-core@3.3.0
+  - kiso-core@3.3.0
 
 ## 1.3.0
 
@@ -36,8 +36,8 @@
 ### Patch Changes
 
 - Updated dependencies
-  - maison-components-utils@2.4.0
-  - maison-components-core@3.2.1
+  - kiso-utils@2.4.0
+  - kiso-core@3.2.1
 
 ## 1.2.0
 
@@ -55,4 +55,4 @@
 ### Patch Changes
 
 - Updated dependencies
-  - maison-components-core@3.2.0
+  - kiso-core@3.2.0

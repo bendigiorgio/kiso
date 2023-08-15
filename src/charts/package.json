@@ -1,17 +1,17 @@
 {
-  "name": "maison-components-charts",
+  "name": "kiso-charts",
   "version": "1.4.1",
   "private": false,
-  "description": "Maison components chart components",
+  "description": "Kiso chart components",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bendigiorgio/maison-components.git"
+    "url": "git+https://github.com/bendigiorgio/kiso.git"
   },
-  "homepage": "https://bendigiorgio.github.io/maison-components",
+  "homepage": "https://bendigiorgio.github.io/kiso",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -75,8 +75,8 @@
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.248.0",
-    "maison-components-core": "workspace:*",
-    "maison-components-utils": "workspace:*",
+    "kiso-core": "workspace:*",
+    "kiso-utils": "workspace:*",
     "next-themes": "^0.2.1",
     "react-day-picker": "^8.8.0",
     "react-hook-form": "^7.44.3",

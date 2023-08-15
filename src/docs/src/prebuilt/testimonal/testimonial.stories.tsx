@@ -20,7 +20,7 @@ export const Default: Story = {
       name: "bendigiorgio",
     },
     quote:
-      "To all my fellow developers who wish to increase their productivity while maintaining high-quality code, I wholeheartedly recommend Maison Components. This library has not just been a tool in our development process; it has become an essential part of our development ecosystem.",
+      "To all my fellow developers who wish to increase their productivity while maintaining high-quality code, I wholeheartedly recommend Kiso. This library has not just been a tool in our development process; it has become an essential part of our development ecosystem.",
   },
 };
 
@@ -48,8 +48,8 @@ export const WithLinks: Story = {
     quote: (
       <p>
         As a full-stack developer constantly on the lookout for efficient and
-        robust solutions, I cannot express enough how time saving Maison
-        Components have for my{" "}
+        robust solutions, I cannot express enough how time saving Kiso compnents
+        have been for my{" "}
         <Button variant="link" className="mx-0 px-0 text-secondary-foreground">
           SaaS
         </Button>{" "}

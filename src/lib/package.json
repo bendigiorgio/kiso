@@ -1,8 +1,8 @@
 {
-  "name": "maison-components-utils",
+  "name": "kiso-utils",
   "version": "2.4.0",
   "private": false,
-  "description": "Maison-components utils",
+  "description": "Kiso utils",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

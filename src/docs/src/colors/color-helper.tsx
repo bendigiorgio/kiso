@@ -16,7 +16,7 @@ import {
   AccordionContent,
   AccordionItem,
 } from "@components/accordion";
-import { AccordionTrigger } from "maison-components-core";
+import { AccordionTrigger } from "kiso-core";
 extend([mixPlugin, namesPlugin]);
 
 const formatTailwindColors = (colors: Colord[]) => {
@@ -226,7 +226,7 @@ const ColorHelper = () => {
         <AccordionItem value="tailwindconfig">
           <AccordionTrigger>
             <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-              Maison Components Tailwindcss Config
+              Kiso Tailwindcss Config
             </h2>
           </AccordionTrigger>
           <AccordionContent>
@@ -246,7 +246,7 @@ const ColorHelper = () => {
         <AccordionItem value="globals">
           <AccordionTrigger>
             <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-              Maison Components globals.css
+              Kiso globals.css
             </h2>
           </AccordionTrigger>
           <AccordionContent>

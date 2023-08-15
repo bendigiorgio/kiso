@@ -1,14 +1,14 @@
 {
-  "name": "maison-components-cli",
+  "name": "kiso-cli",
   "version": "2.2.0",
   "private": false,
-  "description": "Maison-components cli",
+  "description": "Kiso cli",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
-    "maison-components": "./dist/esm/cli.js"
+    "kiso": "./dist/esm/cli.js"
   },
   "scripts": {
     "build": "tsc",

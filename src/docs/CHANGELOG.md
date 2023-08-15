@@ -1,11 +1,11 @@
-# maison-components-storybook
+# kiso-storybook
 
 ## 1.3.1
 
 ### Patch Changes
 
 - Updated dependencies
-  - maison-components-charts@1.2.0
+  - kiso-charts@1.2.0
 
 ## 1.3.0
 
@@ -17,15 +17,15 @@
 
 - Updated dependencies
 - Updated dependencies
-  - maison-components-charts@1.1.0
-  - maison-components-core@3.2.0
+  - kiso-charts@1.1.0
+  - kiso-core@3.2.0
 
 ## 1.2.1
 
 ### Patch Changes
 
 - Updated dependencies
-  - maison-components-core@3.1.0
+  - kiso-core@3.1.0
 
 ## 1.2.0
 
@@ -36,14 +36,14 @@
 ### Patch Changes
 
 - Updated dependencies [6c39f92]
-  - maison-components-core@3.0.0
+  - kiso-core@3.0.0
 
 ## 1.1.1
 
 ### Patch Changes
 
 - Updated dependencies [70481db]
-  - maison-components-core@2.2.0
+  - kiso-core@2.2.0
 
 ## 1.1.0
 
@@ -54,13 +54,13 @@
 ### Patch Changes
 
 - Updated dependencies [c82be9d]
-  - maison-components-core@2.1.0
+  - kiso-core@2.1.0
 
 ## 1.0.2
 
 ### Patch Changes
 
-- maison-components-core@2.0.1
+- kiso-core@2.0.1
 
 ## 1.0.1
 
@@ -68,4 +68,4 @@
 
 - Updated dependencies
 - Updated dependencies
-  - maison-components-core@2.0.0
+  - kiso-core@2.0.0

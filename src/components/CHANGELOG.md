@@ -1,4 +1,4 @@
-# maison-components-core
+# kiso-core
 
 ## 3.5.0
 
@@ -23,7 +23,7 @@
 ### Patch Changes
 
 - Updated dependencies
-  - maison-components-utils@2.4.0
+  - kiso-utils@2.4.0
 
 ## 3.2.0
 
@@ -46,4 +46,4 @@
 ### Patch Changes
 
 - Updated dependencies [6c39f92]
-  - maison-components-utils@2.3.0
+  - kiso-utils@2.3.0

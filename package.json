@@ -1,13 +1,13 @@
 {
-  "name": "maison-components",
+  "name": "kiso",
   "version": "1.1.6b",
-  "description": "The monorepo for maison-components",
+  "description": "The monorepo for kiso",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bendigiorgio/maison-components.git"
+    "url": "git+https://github.com/bendigiorgio/kiso.git"
   },
-  "homepage": "https://bendigiorgio.github.io/maison-components",
+  "homepage": "https://bendigiorgio.github.io/kiso",
   "scripts": {
     "generateTypesVersions": "esno ./scripts/generateTypesVersions.ts",
     "release": "pnpm run generateTypesVersions && turbo run build lint && changeset version && changeset publish",

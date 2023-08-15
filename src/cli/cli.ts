@@ -20,11 +20,11 @@ const program = new Command();
 program
   .name("Maison-Components")
   .version("1.0.0")
-  .description("CLI for Maison Components");
+  .description("CLI for Kiso");
 
 program
   .command("init")
-  .description("Initialize Maison Components")
+  .description("Initialize Kiso")
   .action(async () => {
     const projectInfo = await getProjectInfo();
     const tailwindConfigFileName = "tailwind.config.js";

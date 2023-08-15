@@ -1,11 +1,11 @@
-# maison-components-form
+# kiso-form
 
 ## 2.3.1
 
 ### Patch Changes
 
 - Updated dependencies [8bc02c3]
-  - maison-components-core@3.5.0
+  - kiso-core@3.5.0
 
 ## 2.3.0
 
@@ -16,34 +16,34 @@
 ### Patch Changes
 
 - Updated dependencies [8332b0a]
-  - maison-components-core@3.4.0
+  - kiso-core@3.4.0
 
 ## 2.2.4
 
 ### Patch Changes
 
 - Updated dependencies [4128855]
-  - maison-components-core@3.3.0
+  - kiso-core@3.3.0
 
 ## 2.2.3
 
 ### Patch Changes
 
-- maison-components-core@3.2.1
+- kiso-core@3.2.1
 
 ## 2.2.2
 
 ### Patch Changes
 
 - Updated dependencies
-  - maison-components-core@3.2.0
+  - kiso-core@3.2.0
 
 ## 2.2.1
 
 ### Patch Changes
 
 - Updated dependencies
-  - maison-components-core@3.1.0
+  - kiso-core@3.1.0
 
 ## 2.2.0
 
@@ -54,21 +54,21 @@
 ### Patch Changes
 
 - Updated dependencies [6c39f92]
-  - maison-components-core@3.0.0
+  - kiso-core@3.0.0
 
 ## 2.1.2
 
 ### Patch Changes
 
 - Updated dependencies [70481db]
-  - maison-components-core@2.2.0
+  - kiso-core@2.2.0
 
 ## 2.1.1
 
 ### Patch Changes
 
 - Updated dependencies [c82be9d]
-  - maison-components-core@2.1.0
+  - kiso-core@2.1.0
 
 ## 2.1.0
 
@@ -78,7 +78,7 @@
 
 ### Patch Changes
 
-- maison-components-core@2.0.1
+- kiso-core@2.0.1
 
 ## 2.0.0
 
@@ -90,4 +90,4 @@
 
 - Updated dependencies
 - Updated dependencies
-  - maison-components-core@2.0.0
+  - kiso-core@2.0.0

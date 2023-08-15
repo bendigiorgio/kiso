@@ -102,8 +102,8 @@ module.exports = {
     './src/pages/**/*.{ts,tsx}',
     './src/components/**/*.{ts,tsx}',
     './src/app/**/*.{ts,tsx}',
-    path.join(path.dirname(require.resolve("maison-components-core")), "**/*.js"),
-    path.join(path.dirname(require.resolve("maison-components-charts")), "**/*.js")
+    path.join(path.dirname(require.resolve("kiso-core")), "**/*.js"),
+    path.join(path.dirname(require.resolve("kiso-charts")), "**/*.js")
 
 	],
   theme: {
@@ -201,8 +201,8 @@ module.exports = {
     './src/pages/**/*.{ts,tsx}',
     './src/components/**/*.{ts,tsx}',
     './src/app/**/*.{ts,tsx}',
-    path.join(path.dirname(require.resolve("maison-components-core")), "**/*.js"),
-    path.join(path.dirname(require.resolve("maison-components-charts")), "**/*.js")
+    path.join(path.dirname(require.resolve("kiso-core")), "**/*.js"),
+    path.join(path.dirname(require.resolve("kiso-charts")), "**/*.js")
 
 	],
   theme: {

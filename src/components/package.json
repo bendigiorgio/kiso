@@ -1,7 +1,7 @@
 {
-  "name": "maison-components-core",
+  "name": "kiso-core",
   "version": "3.5.0",
-  "description": "Maison components core components",
+  "description": "Kiso core components",
   "private": false,
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -9,9 +9,9 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bendigiorgio/maison-components.git"
+    "url": "git+https://github.com/bendigiorgio/kiso.git"
   },
-  "homepage": "https://bendigiorgio.github.io/maison-components",
+  "homepage": "https://bendigiorgio.github.io/kiso",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -77,6 +77,9 @@
       "hover-card": [
         "dist/hover-card/"
       ],
+      "image-hover": [
+        "dist/image-hover/"
+      ],
       "input": [
         "dist/input/"
       ],
@@ -109,6 +112,9 @@
       ],
       "sheet": [
         "dist/sheet/"
+      ],
+      "spotlight": [
+        "dist/spotlight/"
       ],
       "stat": [
         "dist/stat/"
@@ -205,7 +211,7 @@
     "cmdk": "^0.2.0",
     "date-fns": "^2.30.0",
     "lucide-react": "^0.248.0",
-    "maison-components-utils": "workspace:*",
+    "kiso-utils": "workspace:*",
     "next-themes": "^0.2.1",
     "react-day-picker": "^8.8.0",
     "react-hook-form": "^7.44.3",

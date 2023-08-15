@@ -64,7 +64,7 @@ const ImagesRight = () => {
           <div className="overflow-hidden h-full flex md:flex-row flex-col md:gap-12 gap-4 py-12 lg:py-0">
             <div className="mx-auto max-w-lg text-left lg:mx-0 shrink-0 md:pt-64 lg:pl-8 md:pl-6 pl-3">
               <h2 className="scroll-m-20 font-bold tracking-tight transition-colors first:mt-0 text-5xl max-w-md">
-                Elevate Your Design, Maison Components
+                Elevate Your Design, Kiso
               </h2>
               <p className="mt-3 leading-relaxed text-foreground/80">
                 Ac euismod vel sit maecenas id pellentesque eu sed consectetur.

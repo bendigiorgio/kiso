@@ -1,4 +1,4 @@
-# maison-components-cli
+# kiso-cli
 
 ## 2.2.0
 
