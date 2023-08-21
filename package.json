@@ -10,7 +10,7 @@
   "homepage": "https://bendigiorgio.github.io/kiso",
   "scripts": {
     "generateTypesVersions": "esno ./scripts/generateTypesVersions.ts",
-    "release": "pnpm run generateTypesVersions && turbo run build lint test && changeset version && changeset publish",
+    "release": "pnpm run generateTypesVersions && test && turbo run build lint test && changeset version && changeset publish",
     "test": "jest"
   },
   "keywords": [

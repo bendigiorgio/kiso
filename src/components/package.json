@@ -83,6 +83,9 @@
       "input": [
         "dist/input/"
       ],
+      "keyboard": [
+        "dist/keyboard/"
+      ],
       "label": [
         "dist/label/"
       ],
@@ -94,6 +97,9 @@
       ],
       "navigation-menu": [
         "dist/navigation-menu/"
+      ],
+      "note": [
+        "dist/note/"
       ],
       "popover": [
         "dist/popover/"
@@ -131,9 +137,6 @@
       "tailwind-indicator": [
         "dist/tailwind-indicator/"
       ],
-      "tests": [
-        "dist/tests/"
-      ],
       "textarea": [
         "dist/textarea/"
       ],
@@ -154,6 +157,9 @@
       ],
       "tooltip": [
         "dist/tooltip/"
+      ],
+      "tree-view": [
+        "dist/tree-view/"
       ]
     }
   },

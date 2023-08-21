@@ -4,11 +4,8 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "//#test": {
-      "dependsOn": ["^lint"]
-    },
     "build": {
-      "dependsOn": ["^lint", "^//#test"],
+      "dependsOn": ["^lint"],
       "outputs": ["dist/**"]
     },
     "//#generateTypesVersions": {
