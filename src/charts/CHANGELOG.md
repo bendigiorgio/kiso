@@ -1,5 +1,19 @@
 # kiso-charts
 
+## 2.0.0
+
+### Major Changes
+
+- 38e10a1: Rename to Kiso -- previously maison-components
+- 38e10a1: Fixed "use client" directive errors
+
+### Patch Changes
+
+- Updated dependencies [38e10a1]
+- Updated dependencies [38e10a1]
+  - kiso-core@4.0.0
+  - kiso-utils@3.0.0
+
 ## 1.4.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "kiso-charts",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "private": false,
   "description": "Kiso chart components",
   "main": "dist/index.cjs",

@@ -1,7 +1,7 @@
 {
   "name": "kiso-form",
   "private": false,
-  "version": "2.3.1",
+  "version": "3.0.0",
   "description": "Kiso form",
   "main": "dist/index.cjs",
   "module": "dist/index.js",

@@ -1,5 +1,12 @@
 # kiso-utils
 
+## 3.0.0
+
+### Major Changes
+
+- 38e10a1: Rename to Kiso -- previously maison-components
+- 38e10a1: Fixed "use client" directive errors
+
 ## 2.4.0
 
 ### Minor Changes

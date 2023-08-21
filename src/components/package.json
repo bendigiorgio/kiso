@@ -1,6 +1,6 @@
 {
   "name": "kiso-core",
-  "version": "3.5.0",
+  "version": "4.0.0",
   "description": "Kiso core components",
   "private": false,
   "main": "dist/index.cjs",

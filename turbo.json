@@ -11,6 +11,10 @@
     "//#generateTypesVersions": {
       "dependsOn": ["^build"],
       "outputs": ["package.json"]
+    },
+    "deploy-site": {
+      "dependsOn": ["^build"],
+      "outputs": ["storybook-static/**", ".vercel/**"]
     }
   }
 }
