@@ -40,3 +40,6 @@ export * from "./toggle-group";
 export * from "./tooltip";
 export * from "./spotlight";
 export * from "./toast";
+export * from "./keyboard";
+export * from "./tree-view";
+export * from "./note";
