@@ -5,6 +5,7 @@ import { compilerOptions as libCompileOptions } from "./src/lib/tsconfig.json";
 
 const jestConfig: JestConfigWithTsJest = {
   preset: "ts-jest",
+  setupFilesAfterEnv: ["<rootDir>/jest-setup.ts"],
   testEnvironment: "jsdom",
   rootDir: "./",
   transform: { "^.+\\.(t|j)sx?$": "ts-jest" },
@@ -18,6 +19,8 @@ const jestConfig: JestConfigWithTsJest = {
       testMatch: [
         "<rootDir>/src/components/src/**/tests/**/*.[jt]s?(x)",
         "<rootDir>/src/components/src/**/**/?(*.)+(spec|test).[jt]s?(x)",
+        "<rootDir>/src/components/**/tests/**/*.[jt]s?(x)",
+        "<rootDir>/src/components/**/**/?(*.)+(spec|test).[jt]s?(x)",
       ],
       modulePaths: [componentCompileOptions.baseUrl], // <-- This will be set to 'baseUrl' value
       moduleNameMapper: pathsToModuleNameMapper(componentCompileOptions.paths, {
