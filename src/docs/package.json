@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "pnpm run build-storybook",
+    "deploy-site": "pnpm run build-storybook && pnpm run deploy-pages",
     "storybook": "storybook dev -p 6006",
     "predeploy": "pnpm run build-storybook",
     "local-deploy": "storybook build && pnpm run deploy-pages",
