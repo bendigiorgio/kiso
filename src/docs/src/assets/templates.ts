@@ -4,80 +4,92 @@ export const STYLES = `@tailwind base;
 
 
 @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 240 10% 3.9%;
-  
-      --muted: 240 4.8% 95.9%;
-      --muted-foreground: 240 3.8% 46.1%;
-  
-      --popover: 0 0% 100%;
-      --popover-foreground: 240 10% 3.9%;
-  
-      --card: 0 0% 100%;
-      --card-foreground: 240 10% 3.9%;
-  
-      --border: 240 5.9% 90%;
-      --input: 240 5.9% 90%;
-  
-      --toggle: 0 0% 100%;
-  
-      --primary: 240 5.9% 10%;
-      --primary-foreground: 0 0% 98%;
-  
-      --secondary: 240 4.8% 95.9%;
-      --secondary-foreground: 240 5.9% 10%;
-  
-      --accent: 240 4.8% 95.9%;
-      --accent-foreground: 240 5.9% 10%;
-  
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 0 0% 98%;
-  
-      --success: 119.7 84.3% 45.1%;
-      --success-foreground: 0 85.7% 97.3%;
-  
-      --ring: 240 5% 64.9%;
-  
-      --radius: 0.5rem;
-    }
-  
-    .dark {
-      --background: 240 10% 3.9%;
-      --foreground: 0 0% 98%;
-  
-      --muted: 240 3.7% 15.9%;
-      --muted-foreground: 240 5% 64.9%;
-  
-      --popover: 240 10% 3.9%;
-      --popover-foreground: 0 0% 98%;
-  
-      --card: 240 10% 3.9%;
-      --card-foreground: 0 0% 98%;
-  
-      --border: 240 3.7% 15.9%;
-      --input: 240 3.7% 15.9%;
-  
-      --toggle: 240 6.6% 28.5%;
-  
-      --primary: 0 0% 98%;
-      --primary-foreground: 240 5.9% 10%;
-  
-      --secondary: 240 3.7% 15.9%;
-      --secondary-foreground: 0 0% 98%;
-  
-      --accent: 240 3.7% 15.9%;
-      --accent-foreground: 0 0% 98%;
-  
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 85.7% 97.3%;
-  
-      --success: 119.7 84.3% 45.1%;
-      --success-foreground: 0 0% 98%;
-  
-      --ring: 240 3.7% 15.9%;
-    }
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+
+    --toggle: 0 0% 100%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --error: 0 100% 96%;
+    --error-foreground: 358 66% 48%;
+
+    --success: 120 63% 85%;
+    --success-foreground: 120 87% 17%;
+
+    --warning: 44 100% 92%;
+    --warning-foreground: 30 100% 32%;
+
+    --ring: 240 5% 64.9%;
+
+    --radius: 0.5rem;
   }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --toggle: 240 6.6% 28.5%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --error: 357 46% 16%;
+    --error-foreground: 358 100% 69%;
+
+    --success: 120 61% 21%;
+    --success-foreground: 120 94% 57%;
+
+    --warning: 32 100% 10%;
+    --warning-foreground: 35 100% 52%;
+
+    --ring: 240 3.7% 15.9%;
+  }
+}
   
   @layer base {
     * {
@@ -115,7 +127,7 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
+       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -134,9 +146,17 @@ module.exports = {
           foreground: "hsl(var(--destructive-foreground))",
         },
         success: {
-            DEFAULT: "hsl(var(--success))",
-            foreground: "hsl(var(--success-foreground))",
-          },
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error))",
+          foreground: "hsl(var(--error-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -148,13 +168,13 @@ module.exports = {
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        toggle: "hsl(var(--toggle))",
       },
+      card: {
+        DEFAULT: "hsl(var(--card))",
+        foreground: "hsl(var(--card-foreground))",
+      },
+      toggle: "hsl(var(--toggle))",
+    },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -214,7 +234,7 @@ module.exports = {
       },
     },
     extend: {
-      colors: {
+       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -233,9 +253,17 @@ module.exports = {
           foreground: "hsl(var(--destructive-foreground))",
         },
         success: {
-            DEFAULT: "hsl(var(--success))",
-            foreground: "hsl(var(--success-foreground))",
-          },
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error))",
+          foreground: "hsl(var(--error-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -247,13 +275,13 @@ module.exports = {
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        toggle: "hsl(var(--toggle))",
       },
+      card: {
+        DEFAULT: "hsl(var(--card))",
+        foreground: "hsl(var(--card-foreground))",
+      },
+      toggle: "hsl(var(--toggle))",
+    },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
