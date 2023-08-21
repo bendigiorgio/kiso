@@ -5,11 +5,14 @@ import { Button } from "kiso-core/button";
 import { Checkbox } from "kiso-core/checkbox";
 import { Clipboard } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "kiso-core/toast";
 
 const Install = () => {
   const [checked, setChecked] = useState<
     ("core" | "utils" | "charts" | "form")[]
   >(["core"]);
+
+  const [openMenu, setOpenMenu] = useState(false);
 
   const installCommand = ` ${checked.map((item) => "kiso-" + item).join(" ")}`;
   const copyToClipboard = (packageManager: "npm" | "pnpm" | "yarn") => {
@@ -18,10 +21,14 @@ const Install = () => {
     }${installCommand}`;
     navigator.clipboard.writeText(command);
   };
+  const { toast } = useToast();
   return (
-    <li className="grid grid-cols-2 gap-4 w-full pl-28 pb-12">
-      <div className="flex flex-col pt-24 space-y-5">
-        <h3 className="text-5xl font-semibold leading-9">Easy installation.</h3>
+    <li
+      id="installation"
+      className="grid xl:grid-cols-2 grid-cols-1 gap-4 w-full mt-4 pl-6 sm:pl-16 md:pl-28 pb-12 relative scroll-m-24"
+    >
+      <div className="flex flex-col pt-24 space-y-5 min-w-[540px]">
+        <h3 className="text-5xl font-semibold">Easy installation.</h3>
         <p className="text-muted-foreground">Quickly setup ...</p>
         <p>Install the parts that your project requires:</p>
         <div className="space-y-4">
@@ -116,12 +123,12 @@ const Install = () => {
           </div>
         </div>
       </div>
-      <div className="pt-48">
+      <div className="xl:pt-48 pt-8 flex flex-col justify-center items-center">
         <div className="space-x-2 flex items-center">
           <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold h-8 flex items-center">
             pnpm add{installCommand}
           </code>
-          <Popover>
+          <Popover open={openMenu} onOpenChange={setOpenMenu}>
             <PopoverTrigger asChild>
               <Button variant="outline" size="icon" className="h-8 w-8">
                 <Clipboard className="h-4 w-4" />
@@ -131,6 +138,8 @@ const Install = () => {
               <Button
                 onClick={() => {
                   copyToClipboard("npm");
+                  setOpenMenu(false);
+                  toast({ description: "Copied to clipboard" });
                 }}
                 variant="link"
                 size="sm"
@@ -140,6 +149,8 @@ const Install = () => {
               <Button
                 onClick={() => {
                   copyToClipboard("pnpm");
+                  setOpenMenu(false);
+                  toast({ description: "Copied to clipboard" });
                 }}
                 variant="link"
                 size="sm"
@@ -149,6 +160,8 @@ const Install = () => {
               <Button
                 onClick={() => {
                   copyToClipboard("yarn");
+                  setOpenMenu(false);
+                  toast({ description: "Copied to clipboard" });
                 }}
                 variant="link"
                 size="sm"

@@ -2,6 +2,7 @@
 const path = require("path");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 module.exports = {
+  mode: "jit",
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
@@ -9,6 +10,7 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/pages/**/*.{ts,tsx}",
     "./src/components/**/*.{ts,tsx}",
+    "./src/assets/**/*.{ts,tsx}",
     "./src/app/**/*.{ts,tsx}",
     path.join(path.dirname(require.resolve("kiso-core")), "**/*.js"),
   ],
@@ -42,6 +44,14 @@ module.exports = {
         success: {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error))",
+          foreground: "hsl(var(--error-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
