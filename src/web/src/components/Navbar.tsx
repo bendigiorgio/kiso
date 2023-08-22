@@ -31,14 +31,14 @@ const Navbar = () => {
             </a>
             <a
               className="hover:cursor-pointer"
-              href="https://bendigiorgio.github.io/maison-components"
+              href="https://bendigiorgio.github.io/kiso"
             >
               <DropdownMenuItem>Documentation</DropdownMenuItem>
             </a>
             <Separator className="my-2" />
             <a
               className="hover:cursor-pointer"
-              href="https://github.com/bendigiorgio/maison-components"
+              href="https://github.com/bendigiorgio/kiso"
             >
               <DropdownMenuItem className="space-x-2">
                 <Star className=" h-[14px] w-[14px]" /> <p>Star us on GitHub</p>
@@ -67,13 +67,13 @@ const Navbar = () => {
           <li>
             <Link
               className="w-[167px]"
-              href="https://bendigiorgio.github.io/maison-components"
+              href="https://bendigiorgio.github.io/kiso"
             >
               Documentation
             </Link>
           </li>
           <li className="ml-auto">
-            <Link href="https://github.com/bendigiorgio/maison-components">
+            <Link href="https://github.com/bendigiorgio/kiso">
               <Button
                 className="text-xs flex flex-row items-center space-x-2"
                 size="sm"

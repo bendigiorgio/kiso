@@ -17,10 +17,7 @@ import ora from "ora";
 
 const program = new Command();
 
-program
-  .name("Maison-Components")
-  .version("1.0.0")
-  .description("CLI for Kiso");
+program.name("Kiso-UI").version("1.0.0").description("CLI for Kiso");
 
 program
   .command("init")

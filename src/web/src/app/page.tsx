@@ -51,7 +51,7 @@ export default function Home() {
               </a>
               <Link
                 className="w-[167px]"
-                href="https://bendigiorgio.github.io/maison-components"
+                href="https://bendigiorgio.github.io/kiso"
               >
                 <Button
                   className="items-center w-full flex flex-row space-x-2"
@@ -278,7 +278,7 @@ export default function Home() {
         </div>
         <div className="pt-24 max-w-xl">
           <div className="flex flex-row space-x-4">
-            <Link href="https://github.com/bendigiorgio/maison-components">
+            <Link href="https://github.com/bendigiorgio/kiso">
               <Button size="icon" variant="outline">
                 <Github className="stroke-[1px]" />
               </Button>
@@ -296,9 +296,9 @@ export default function Home() {
             Let me know! Feel free to get in contact with ideas, feedback or
             even just to chat.
           </p>
-          <Link href="https://github.com/bendigiorgio/maison-components">
+          <Link href="https://github.com/bendigiorgio/kiso">
             <Button className="p-0 h-fit" variant="link">
-              https://github.com/bendigiorgio/maison-components
+              https://github.com/bendigiorgio/kiso
             </Button>
           </Link>
         </div>
