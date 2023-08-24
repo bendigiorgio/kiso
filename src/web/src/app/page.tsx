@@ -33,7 +33,7 @@ export default function Home() {
     <main>
       <HomeGraphic className="absolute left-0 top-[527px] -z-10 w-screen min-w-[1440px]" />
       <section id="home" className="min-h-[1265px] relative">
-        <div className="flex flex-col justify-center items-center pt-[21rem]">
+        <div className="flex flex-col justify-center items-center pt-28 sm:pt-[21rem]">
           <div className="max-w-2xl mx-auto flex flex-col text-center">
             <div className="text-xs text-muted-foreground mb-1">
               「 foundation/basis 」
@@ -148,6 +148,7 @@ export default function Home() {
                   background: "black",
                   width: "fit-content",
                   height: "fit-content",
+                  maxWidth: "80vw",
                 }}
               >
                 {useSnippet}
@@ -228,6 +229,7 @@ export default function Home() {
                   background: "black",
                   width: "fit-content",
                   height: "fit-content",
+                  maxWidth: "80vw",
                 }}
               >
                 {styleSnippet}

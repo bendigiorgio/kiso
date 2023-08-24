@@ -27,11 +27,11 @@ const Install = () => {
       id="installation"
       className="grid xl:grid-cols-2 grid-cols-1 gap-4 w-full mt-4 pl-6 sm:pl-16 md:pl-28 pb-12 relative scroll-m-24"
     >
-      <div className="flex flex-col pt-24 space-y-5 min-w-[540px]">
+      <div className="flex flex-col pt-24 space-y-5 sm:min-w-[540px]">
         <h3 className="text-5xl font-semibold">Easy installation.</h3>
         <p className="text-muted-foreground">Quickly setup ...</p>
         <p>Install the parts that your project requires:</p>
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-full">
           <div className="flex items-center space-x-2">
             <Checkbox
               defaultChecked={true}
@@ -69,7 +69,7 @@ const Install = () => {
             />
             <label
               htmlFor="charts"
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-row justify-between"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-row justify-between "
             >
               <span className="w-[80px]">kiso-charts</span>
               <span className="ml-4 text-muted-foreground">
@@ -91,7 +91,7 @@ const Install = () => {
             />
             <label
               htmlFor="utils"
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-row justify-between"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-row justify-between "
             >
               <span className="w-[80px]">kiso-utils</span>
               <span className="ml-4 text-muted-foreground">
@@ -113,9 +113,9 @@ const Install = () => {
             />
             <label
               htmlFor="form"
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-row justify-between"
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-row justify-between whitespace-pre-line"
             >
-              <span className="w-[80px]">kiso-form</span>
+              <span className="w-[80px] whitespace-nowrap">kiso-form</span>
               <span className="ml-4 text-muted-foreground">
                 Utilities for connecting with React-Hook-Form
               </span>

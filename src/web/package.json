@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "vercel-build": "vercel build --prod",
-    "vercel-deploy": "vercel depoy --prebuilt --prod",
+    "vercel-build": "next build",
+    "vercel-deploy": "vercel deploy --prebuilt --prod",
+    "site-build": "vercel build --prod",
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "deploy-site": "pnpm run vercel-build && pnpm run vercel-deploy"
+    "deploy-site": "pnpm run site-build && pnpm run vercel-deploy"
   },
   "dependencies": {
     "@types/node": "20.3.1",
