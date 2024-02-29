@@ -15,13 +15,13 @@ For incremental adoption or to suit your project's needs, feel free to just copy
 1. Install the kiso library in your Next.js project.
 
    ```sh
-   npm install kiso
+   npm install kiso-core
    ```
 
    or
 
    ```sh
-   yarn add kiso
+   yarn add kiso-core
    ```
 
 2. Import the required components from the library and use them in your project.
